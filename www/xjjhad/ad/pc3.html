@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>【爱碰】- 结识附近的人，开启同城私密约会！</title>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="./pc3/css/style.css">
+    <script src="http://ap-release.oss-cn-shenzhen.aliyuncs.com/app/oss/tg/js/jquery.min.js"></script>
+    <script type="text/javascript" src="pc3/js/home.js"></script>
+    <script type="text/javascript" src="newpc/js/appon2.js"></script>
+    <style id="tsbrowser_video_independent_player_style" type="text/css">
+        [tsbrowser_force_max_size] {
+            width: 100% !important;
+            height: 100% !important;
+            left: 0px !important;
+            top: 0px !important;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+        [tsbrowser_force_fixed] {
+            position: fixed !important;
+            z-index: 9999 !important;
+            background: black !important;
+        }
+        [tsbrowser_force_hidden] {
+            opacity: 0 !important;
+            z-index: 0 !important;
+        }
+        [tsbrowser_hide_scrollbar] {
+            overflow: hidden !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main yahei">
+    <div class="wrap">
+        <div class="wrap-section"></div>
+        <div class="gl_r">
+            <div class="olt_wrap clearfix">
+
+                <h2>
+                    <span class="h2_title">
+                        <img src="http://ap-release.oss-cn-shenzhen.aliyuncs.com/app/oss/sem/wap3/images/logo.png" style="width: 30px; vertical-align: middle"/> 扫一扫,
+                    </span>
+                    <span>约会同城美女主播</span>
+                </h2>
+                <br>
+                <a  class="ablock org  f_r saoyisao">手机扫一扫，马上加入</a>
+                <small class="comp_name"></small>
+            </div>
+        </div>
+    </div>
+
+    <div class="picTip" style="top: -10px; left: 949.953px;">
+        <a href="javascript:;" class="QQlogin picTipBox">
+            <b class="wz"><img src="pc3/images/t1.png" alt=""><em>重庆</em></b>
+            <img src="./pc3/source/images/24.jpg" class="gray">
+            <p>淘宝店主  21岁  84/65/88</p>
+        </a>
+        <span style="display: none; left: 287.047px; top: 247px;">听我唱歌吗</span>
+        <a href="javascript:;" class="QQlogin golive">听我唱歌吗</a>
+    </div>
+
+
+    <div class="videobox">
+        <a class="hand handOn" style="left: 326px; top: 179px;"><img src="./pc3/images/hand.gif" alt=""></a>
+        <a href="javascript:;" class="auicon auiconOn"></a>
+        <video id="myvideo" autoplay="autoplay" src="pc3/source/video/2.mp4"></video>
+        <span class="j1"></span>
+        <span class="j2"></span>
+        <span class="j3"></span>
+        <span class="j4"></span>
+    </div>
+
+    <script type="text/javascript">
+        var hoverTime = null,v = 0,vid=0;
+        WrapImages();
+        WrapVideo();
+        RegisterWrap();
+
+        $('.picTip').mouseleave(function(){
+            if(hoverTime) clearTimeout(hoverTime);
+            $('.picTip').removeClass('picTipShow');
+            $(this).find('span').hide();
+        });
+
+        var tipmovetime = null;
+        $('.picTip').mousemove(function(event) {
+            if(tipmovetime) clearTimeout(tipmovetime);
+            var that = $(this);
+            tipmovetime = setTimeout(function(){
+                var span = $(that).find('span');
+                $(span).show().css({
+                    left :event.pageX  - $('.picTip').offset().left + 15,
+                    top : event.pageY - $('.picTip').offset().top + 15
+                })
+            },5)
+        });
+
+        var movetime = null;
+        var wh = $(window).width();
+        $('.videobox').mousemove(function(event) {
+            if(movetime) clearTimeout(movetime);
+            movetime = setTimeout(function(){
+                var maxW = $('.videobox').width(),
+                    maxH = $('.videobox').height();
+                if(wh > 1200){
+                    var left = event.pageX  - $('.videobox').offset().left - 20;
+                    var top = event.pageY - $('.videobox').offset().top - 26;
+                }else{
+                    var left = event.pageX  - $('.videobox').offset().left + 45;
+                    var top = event.pageY - $('.videobox').offset().top + 51;
+                }
+                $('.hand').css({
+                    left : left + 40 > maxW ? maxW - 40 : (left < 0 ? 0 : left),
+                    top : top + 53 > maxH ? maxH - 53 : (top < 0 ? 0 : top)
+                })
+            },5)
+        });
+
+        $(function(){
+            $(".main a, .saoyisao").click(function(){
+
+                layer.open({
+                    type: 2,
+                    title: !1,
+                    shadeClose: !1,
+                    shade: [0.6, "url(newpc/images/mark_bg.png) #000"],
+                    area: ["700px", "520px"],
+                    skin: "",
+
+                    content: ["alert.html" + window.location.hash, "no"],
+                    zIndex: 111111
+                });
+
+            })
+        })
+        window.onload = function(){}
+    </script>
+
+    <div class="footer" style="bottom: 10px; position: absolute;">
+        <div class="wrap">
+            <div class="copyright">
+                &nbsp;版权所有: <span>长治市汇丰海信息科技有限公司</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div style='display:none'>
+    <script type="text/javascript" src="https://s23.cnzz.com/z_stat.php?id=1277479248&web_id=1277479248"></script>
+</div>
+</body>
+</html>
