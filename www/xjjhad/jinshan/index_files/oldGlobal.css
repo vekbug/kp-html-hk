@@ -1,0 +1,74 @@
+body,h1,h2,h3,h4,h5,h6,p,blockquote,
+dl,dt,dd,ul,ol,li,
+pre,code,
+form,fieldset,legend,button,input,textarea,
+th,td{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/1.5 Tahoma, Arial, "SimSun"; font-family: "Microsoft YaHei"}
+input,select,button,textarea{font-size:100%;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+ol,ul{list-style:none;}
+em,strong{font-style:normal;font-weight:normal;}
+fieldset,img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+html,body{width:100%;height:100%;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+.clearfix:after{content:"\200B";display:block;height:0;clear:both;}
+.clearfix{*zoom:1;}
+.fl { float: left; }
+.fr { float: right; }
+.big { font-size: 14px }
+/*顶部可配置通知栏*/
+.top-banner{height:70px;background:#fd6f37;color:#fff;font-size:18px;text-align:left}
+.top-banner a{color:#fff}
+.top-banner a:hover{color:#fff;text-decoration:none}
+.banner-wrap{display:block;width:862px;margin:0 auto;line-height:70px;height:70px;background:url(/images/newGlobal/dbt-banner.png) 0 center no-repeat;padding-left:98px}
+.banner-wrap .rt{float:right}
+.banner-wrap .rt span{font-size:20px;margin-right:60px}
+.banner-wrap .btb-btn{width:120px;height:40px;display:inline-block;line-height:40px;text-align:center;background:#37d34c;color:#fff;font-size:20px}
+.banner-wrap .btb-btn:hover{background-color:#32ea5a;color:#fff}
+/* nav_v2*/
+.head_v2 { height: 50px; overflow: visible;background-color: #fff;border-bottom: 1px solid #dadada;}
+.container_v2{ overflow: hidden; margin: 0 auto; text-align: left; width: 960px; }
+.logo_v2 { margin-top: 11px; width: 124px; height: 24px; overflow: hidden;}
+.nav_v2 { padding-right: 10px; }
+.nav_v2 li { width: 80px; height: 50px; overflow: hidden; text-align: center; color: #FFF; line-height: 50px; padding: 0 2px 0 0;background: url(/images/newGlobal/line-1.png) right no-repeat;}
+.nav_v2 li a { color: #666; display: block; height: 50px; overflow: hidden; background: none;font-size: 14px;}
+.nav_v2 .current_v2 a ,.nav_v2 .current_v3 a,.nav_v2 .current_v4 a{cursor: default; background-position: 0 -100px; color: #088ae1;}
+.nav_v2 .current_v4 a {cursor: pointer;}
+.nav_v2 .current_v3 a:hover,.nav_v2 .current_v4 a:hover{text-decoration: none;}
+.v2 .nav_v2 a:hover { color: #088ae1; text-decoration: none;}
+/*search*/
+.search_v2 { width: 150px; margin: 13px 10px 0 0; _display: inline; position: relative; z-index: 99;border-radius: 2px;overflow: hidden;background: #fff;border: 1px solid #4e4e4e;border-radius: 12px;}
+.search_v2 .input, .search_v2 .ipt, .search_v2 .search_Btn, .search_v2 .Btn { float: left; cursor: pointer; border: none;}
+.search_v2 .input, .search_v2 .ipt { line-height: 24px; padding-left: 10px; padding-right: 4px;width: 116px; height: 24px;_height: 20px;_line-height: 20px;_border: 1px solid #fff}
+.search_v2 .search_Btn, .search_v2 .Btn { width: 24px; height: 24px;}
+.search_v2 .input {color: #888;font-family: "Microsoft YaHei";}
+.search_v2 .ipt {color: #000;border: none;outline: none;_border: 1px solid #fff}
+.search_v2 .search_Btn {width: 14px;height: 14px;background: url(/images/newGlobal/all.png) -118px -16px no-repeat;margin-top: 5px;outline: none;}
+.search_v2 .Btn {display: none}
+.search_v2 table td { line-height: 22px; font-size: 12px }
+.search_v2 .tabBJ { margin: 0; padding: 6px 0; border: 1px solid #e3e3e3; width: 152px; background: #FFF }
+#suggests { position: absolute; top: 24px; left: 0; z-index: 10000; }
+/* footer */
+.container_v2{ overflow: hidden; margin: 0 auto; text-align: left; width: 960px; }
+.container_v2 .main{ width: 710px; }
+.footer_v2 { border-top: 1px solid #e3e3e3;margin-top: 50px; padding-bottom: 15px; }
+.foot_lst { width: 118px; height: 150px; overflow: hidden; border-left: 1px solid #ffffff; border-right: 1px solid #dbdbdb; margin: 10px 0; padding: 10px 20px; }
+.foot_lst.first { border-left: none; }
+.foot_lst.last { border-right: none; }
+.foot_lst dt { font-weight: 700; margin-bottom: 5px; }
+.links_v2 { border-bottom: 1px solid #dbdbdb; padding: 10px; }
+.links_v2 a { margin: 0 10px;}
+.v2 { color: #6d6d6d; }
+.v2 a { color: #838383; text-decoration: none; }
+.v2 a:hover { text-decoration: none; color: #1a1a1a; }
+.box_foot1 { border-top: 1px solid #fff; padding: 10px; }
+.copyright_v2 .txt { vertical-align: middle; margin-left: 20px; }
+.concern .txt { vertical-align: middle; line-height: 16px; }
+.concern a{ background: url(/images/newGlobal/ui.png) no-repeat; }
+.concern a { text-indent: -9999px; display: inline-block; width: 16px; height: 16px; overflow: hidden; vertical-align: middle; margin: 0 3px; }
+.concern a.sina { background-position: 0 -350px; }
+.concern a.sina:hover { background-position: 0 -300px; }
+.concern a.tx { background-position: 0 -450px; }
+.concern a.tx:hover { background-position: 0 -400px; }
