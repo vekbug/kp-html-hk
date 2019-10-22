@@ -1,53 +1,212 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
-<html lang="en">
-
+<!-- saved from url=(0028)http://azm.fubixingtech.com/ -->
+<html lang="en" style="font-size: 192px;">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>首页</title>
+    <title>爱字幕-教程</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script>
+        document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+    </script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
     <style>
-        * {
+        *,
+        ::before,
+        ::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
             margin: 0;
             padding: 0;
         }
 
-        #download {
-            position: relative;
+        .container {
+            margin: 0;
+            padding: 0;
+            width: 100%;
         }
+
+        .bg {
+            width: 100%;
+            display: block;
+        }
+
+        .bg>img {
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 100%;
+        }
+
+        .btn {
+            position: absolute;
+            z-index: 1000;
+            top: 0;
+            right: 25%;
+            width: 52%;
+            /*padding-left: 6rem;*/
+        }
+
+        .gif > img {
+            margin-right: 0;
+            display: block;
+            width: 90%;
+        }
+
+
+        .button {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 2000;
+        }
+
+
+        .fotter1 a {
+            color: #ffffff;
+            padding-right: 0.8rem;
+            text-decoration: underline;
+            font-size: 0.2rem;
+        }
+
+        .fotter1 a:first-child {
+            margin-left: 0.4rem;
+        }
+
+        .buttontop {
+            position: absolute;
+            z-index: 1000;
+            width: 30%;
+            margin: 30% 38%;
+        }
+
+        .buttontop2{
+            position: absolute;
+            z-index: 1000;
+            width: 15%;
+            margin: 15% 40%;
+        }
+
+        .kuai {
+            margin: 0 0 0 65%;
+            height: 100px;
+            position: fixed;
+            width: 35%;
+            bottom: 0;
+            z-index: 2001;
+        }
+
     </style>
 </head>
 
 <body>
-    <div id="download" class="downloadclz">
-        <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
-        <img src="images/btn.png" class="downloadclz" style="position: fixed;left: 20%;bottom: 5%;width: 60%">
-        <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 2%">
-            新疆佳和安达网络科技有限公司</div>
+
+<div class="container">
+    <div class="bg">
+        <img src="http://rese-vi.oss-cn-hangzhou.aliyuncs.com/img/azm_course/1.png"/>
+        <img src="http://rese-vi.oss-cn-hangzhou.aliyuncs.com/img/azm_course/1_copy2.png"/>
+        <div><p style="text-align: center">-------------------</p></div>
+        <sapn id="btn2">
+            <img class="buttontop2 downloadclz" src="http://rese-vi.oss-cn-hangzhou.aliyuncs.com/img/azm_course/button.png">
+        </sapn>
+        <img src="http://rese-vi.oss-cn-hangzhou.aliyuncs.com/img/azm_course/2.png"/>
+        <img src="http://rese-vi.oss-cn-hangzhou.aliyuncs.com/img/azm_course/2_copy_2.png"/>
+        <img src="http://rese-vi.oss-cn-hangzhou.aliyuncs.com/img/azm_course/2_copy_3.png"/>
+        <img src="http://rese-vi.oss-cn-hangzhou.aliyuncs.com/img/azm_course/2_copy_4.png"/>
+        <div style="height: 50px"></div>
     </div>
 
-    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
-    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
-    <script type="text/javascript">
+    <div class="btn">
+        <div>
+            <sapn id="btn3">
+                <img class="buttontop downloadclz" src="http://rese-vi.oss-cn-hangzhou.aliyuncs.com/img/azm_course/button.png">
+            </sapn>
+        </div>
+    </div>
 
-        $(document).ready(function () {
-            $('.downloadclz').click(function (e) {
-                var id = getParam('id');
-                if (id == '') {
-                    id = "2";
-                }
-                if (isIos()) {
-                    if (id == '1') { window.location.href = "https://at.umtrack.com/0L5X1v?cid=5484&keywordid={keywordid}&creative={creative}"; }
-                    if (id == '2') { window.location.href = "https://at.umtrack.com/0TbG5z?cid=5484&keywordid={keywordid}&creative={creative}"; }
-                    if (id == '3') { window.location.href = "https://at.umtrack.com/LbKvuq?cid=5484&keywordid={keywordid}&creative={creative}"; }
-                    if (id == '4') { window.location.href = "https://at.umtrack.com/iymCym?cid=5484&keywordid={keywordid}&creative={creative}"; }
-                    if (id == '5') { window.location.href = "https://at.umtrack.com/ai0Dya?cid=5484&keywordid={keywordid}&creative={creative}"; }
-                } else {
-                    window.location.href = "http://copy-book.oss-cn-hangzhou.aliyuncs.com/say_words/dsp/190924/SEM-KP" + id + ".apk";
-                }
-            });
+
+
+    <img class="button btn2 downloadclz" src="http://rese-vi.oss-cn-hangzhou.aliyuncs.com/img/kuaishou_luodiye/bottom.png">
+</div>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="http://cdn.kpam.com.cn/js/app.js"></script>
+<script>
+    var myDate = new Date();
+    document.onload = !(function () {
+        url = getFileUrl();
+    })();
+
+    function getFileUrl() {
+
+        var time = Math.round(new Date() / 1000);
+        $.ajax({
+            url: "http://say-words.recorder.nineton.cn/api/sem/sem",
+            type: "POST",
+            async: false,
+            data: {'cip': returnCitySN["cip"], "sem": 1, "createtime": time},
+            success: function (result) {
+                console.log(result);
+            }
         });
-    </script>
-</body>
+    }
 
+    function downLoadSem() {
+        $.ajax({
+            url: "http://say-words.recorder.nineton.cn/api/sem/download",
+            type: "POST",
+            async: false,
+            data: {'cip': returnCitySN["cip"], "sem": 1, 'type': 1},
+            success: function (result) {
+                console.log(result);
+            }
+        });
+    }
+
+
+    var browser = {
+        versions: function () {
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {//移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+            };
+        }(),
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+    };
+
+    $('.downloadclz').click(function (e) {
+        var id = getParam('id');
+        if (id == '') {
+            id = "2";
+        }
+        if (isIos()) {
+            if (id == '1') { window.location.href = "https://at.umtrack.com/0L5X1v?cid=5484&keywordid={keywordid}&creative={creative}"; }
+            if (id == '2') { window.location.href = "https://at.umtrack.com/0TbG5z?cid=5484&keywordid={keywordid}&creative={creative}"; }
+            if (id == '3') { window.location.href = "https://at.umtrack.com/LbKvuq?cid=5484&keywordid={keywordid}&creative={creative}"; }
+            if (id == '4') { window.location.href = "https://at.umtrack.com/iymCym?cid=5484&keywordid={keywordid}&creative={creative}"; }
+            if (id == '5') { window.location.href = "https://at.umtrack.com/ai0Dya?cid=5484&keywordid={keywordid}&creative={creative}"; }
+        } else {
+            window.location.href = "http://copy-book.oss-cn-hangzhou.aliyuncs.com/say_words/dsp/190924/SEM-KP" + id + ".apk";
+        }
+    });
+
+    //setTimeout(function () {
+    //downLoad();
+    //}, 10000);
+</script>
+</body>
 </html>
