@@ -131,24 +131,24 @@
     </style>
 
 
-    <a id="app" href="https://xiaoying.tv/getapk/baidu1.apk">
-        <div class="main">
-            <div class="videoBox">
-                <img class="bg" id="test" src="./index_files/baidunew11.jpg" alt="">
-                <img id="download" class="download anfinger" src="./index_files/baidubtnnew11.png" alt=""
-                    href="https://xiaoying.tv/getapk/baidu1.apk">
 
-            </div>
-            <img class="bg" id="cover" src="./index_files/baidunew12.jpg" alt="">
-            <img class="bg" src="./index_files/baidunew13.jpg" alt="">
-            <img class="bg" src="./index_files/baidunew14.jpg" alt="">
-            <img class="bg" src="./index_files/baidunew15.jpg" alt="">
-            <div>
-                <img class="button anfinger" src="./index_files/btn.gif" alt="">
-            </div>
-            <div class="btTxt" style="bottom: 5px">新疆佳和安达网络科技有限公司</div>
+    <div class="main">
+        <div class="videoBox">
+            <img class="bg" id="test" src="./index_files/baidunew11.jpg" alt="">
+            <a id="app" href="https://go.onelink.me/app/baidu1">
+                <img id="download" class="download anfinger" src="./index_files/baidubtnnew11.png" alt=""></a>
+
         </div>
-    </a>
+        <img class="bg" id="cover" src="./index_files/baidunew12.jpg" alt="">
+        <img class="bg" src="./index_files/baidunew13.jpg" alt="">
+        <img class="bg" src="./index_files/baidunew14.jpg" alt="">
+        <img class="bg" src="./index_files/baidunew15.jpg" alt="">
+        <div>
+            <a href="https://go.onelink.me/app/baidu2">
+                <img class="button anfinger" src="./index_files/btn.gif" alt=""></a>
+        </div>
+        <div class="btTxt" style="bottom: 5px">新疆佳和安达网络科技有限公司</div>
+    </div>
     <script>
         function preventDefault(e) {
             e.preventDefault();
@@ -159,8 +159,8 @@
         var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
         var bIsAndroid = sUserAgent.match(/android/i) == "android";
         window.channel = 'common';
-        var androidurl = 'https://go.onelink.me/app/baidu1'
-        var iosurl = 'https://go.onelink.me/app/baidu1'
+        var androidurl = ''
+        var iosurl = ''
         // if (window.location.href.indexOf('baidu=10') !== -1) {
         //     iosurl = 'https://go.onelink.me/app/baidu1';
         // } else if (window.location.href.indexOf('baidu=11') !== -1) {
@@ -192,13 +192,13 @@
         //     androidurl = 'https://xiaoying.tv/getapk/baidu1.apk'
         //     iosurl = 'https://itunes.apple.com/app/apple-store/id738897668?pt=2088378&ct=baidu1&mt=8'
         // }
-        if (bIsAndroid) {
-            $('#app').attr('href', androidurl);
-            $('#download').attr('href', androidurl);
-        } else {
-            $('#app').attr('href', iosurl);
-            $('#download').attr('href', iosurl);
-        }
+        // if (bIsAndroid) {
+        //     $('#app').attr('href', androidurl);
+        //     $('#download').attr('href', androidurl);
+        // } else {
+        //     $('#app').attr('href', iosurl);
+        //     $('#download').attr('href', iosurl);
+        // }
         window.onload = function () {
             var height = $('.download').height();
             $('.btTxt').attr('style', 'bottom: ' + (5) + 'px');
