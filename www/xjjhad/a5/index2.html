@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="keywords" content="短视频拍摄制作App，全球上亿用户都在拍！最强视频剪辑，最in动画字幕和贴纸">
+    <meta name="description" content="">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>小影</title>
+    <link rel="icon" href="./index_files/favicon.ico">
+</head>
+
+<body>
+    <script src="./index_files/zepto.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #cnzz_stat_icon_1274110768 {
+            display: none;
+        }
+
+        #app {
+            position: fiexd;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .main {
+            position: fiexd;
+            height: 100vh;
+            background-color: rgb(12, 13, 12);
+            overflow: hidden;
+        }
+
+        .yushan {
+            width: 20px;
+            position: absolute;
+            left: 20px;
+            top: 12px;
+            opacity: 0.8;
+            z-index: 8;
+        }
+
+        .bg {
+            width: 100%;
+        }
+
+        .videoBox {
+            position: relative;
+        }
+
+        #videoplaypart {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            width: 100%;
+        }
+
+        /*.loading {*/
+        /*position: absolute;*/
+        /*width: 50px;*/
+        /*left: 50%;*/
+        /*top: 50%;*/
+        /*margin-left: -25px;*/
+        /*margin-top: -25px;*/
+        /*z-index: 9;*/
+        /*}*/
+        .btTxt {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 9;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .download {
+            position: absolute;
+            width: 26%;
+            right: 10px;
+            top: 40%;
+        }
+
+        @keyframes aroundfinger {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(0, 5px);
+            }
+
+            50% {
+                transform: translate(0, 10px);
+            }
+
+            75% {
+                transform: translate(0, 5px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        .anfinger {
+            animation: aroundfinger 0.8s linear infinite;
+        }
+
+        .button {
+            position: absolute;
+            width: 80%;
+            right: 35px;
+            bottom: -6%;
+        }
+    </style>
+
+
+    <a id="app" href="https://xiaoying.tv/getapk/baidu1.apk">
+        <div class="main">
+            <div class="videoBox">
+                <img class="bg" id="test" src="./index_files/baidunew11.jpg" alt="">
+                <img id="download" class="download anfinger" src="./index_files/baidubtnnew11.png" alt=""
+                    href="https://xiaoying.tv/getapk/baidu1.apk">
+
+            </div>
+            <img class="bg" id="cover" src="./index_files/baidunew12.jpg" alt="">
+            <img class="bg" src="./index_files/baidunew13.jpg" alt="">
+            <img class="bg" src="./index_files/baidunew14.jpg" alt="">
+            <img class="bg" src="./index_files/baidunew15.jpg" alt="">
+            <div>
+                <img class="button anfinger" src="./index_files/btn.gif" alt="">
+            </div>
+            <div class="btTxt" style="bottom: 5px">新疆佳和安达网络科技有限公司</div>
+        </div>
+    </a>
+    <script>
+        function preventDefault(e) {
+            e.preventDefault();
+        }
+        document.addEventListener('touchmove', preventDefault, { passive: false });
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        window.channel = 'common';
+        var androidurl = 'https://go.onelink.me/app/baidu2'
+        var iosurl = 'https://go.onelink.me/app/baidu2'
+        // if (window.location.href.indexOf('baidu=10') !== -1) {
+        //     iosurl = 'https://go.onelink.me/app/baidu1';
+        // } else if (window.location.href.indexOf('baidu=11') !== -1) {
+        //     iosurl = 'https://go.onelink.me/app/baidu2';
+        // } else if (window.location.href.indexOf('baidu=1') !== -1) {
+        //     androidurl = 'https://xiaoying.tv/getapk/baidu1.apk'
+        //     iosurl = 'https://itunes.apple.com/app/apple-store/id738897668?pt=2088378&ct=baidu1&mt=8'
+        // } else if (window.location.href.indexOf('baidu=2') !== -1) {
+        //     androidurl = 'https://xiaoying.tv/getapk/baidu1.apk'
+        //     iosurl = 'https://itunes.apple.com/app/apple-store/id738897668?pt=2088378&ct=baidu2&mt=8'
+        // } else if (window.location.href.indexOf('baidu=3') !== -1) {
+        //     androidurl = 'https://xiaoying.tv/getapk/baidu3.apk'
+        //     iosurl = 'https://itunes.apple.com/app/apple-store/id738897668?pt=2088378&ct=baidu3&mt=8'
+        // } else if (window.location.href.indexOf('baidu=4') !== -1) {
+        //     androidurl = 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.8.0_3-baidu4-Domestic.apk'
+        //     iosurl = 'https://itunes.apple.com/app/apple-store/id738897668?pt=2088378&ct=baidu4&mt=8'
+        // } else if (window.location.href.indexOf('baidu=5') !== -1) {
+        //     androidurl = 'https://xiaoying.tv/getapk/baidu5.apk'
+        //     iosurl = 'https://itunes.apple.com/app/apple-store/id738897668?pt=2088378&ct=baidu5&mt=8'
+        // } else if (window.location.href.indexOf('baidu=6') !== -1) {
+        //     iosurl = 'https://at.umeng.com/za0fGf?cid=5484&keywordid={keywordid}&creative={creative}';
+        // } else if (window.location.href.indexOf('baidu=7') !== -1) {
+        //     iosurl = 'https://at.umeng.com/O9LLne?cid=5484&keywordid={keywordid}&creative={creative}';
+        // } else if (window.location.href.indexOf('baidu=8') !== -1) {
+        //     iosurl = 'https://at.umeng.com/WfGPHv?cid=5484&keywordid={keywordid}&creative={creative}';
+        // } else if (window.location.href.indexOf('baidu=9') !== -1) {
+        //     iosurl = 'https://at.umeng.com/PDe4Hv?cid=5484&keywordid={keywordid}&creative={creative}';
+        // } else {
+        //     androidurl = 'https://xiaoying.tv/getapk/baidu1.apk'
+        //     iosurl = 'https://itunes.apple.com/app/apple-store/id738897668?pt=2088378&ct=baidu1&mt=8'
+        // }
+        if (bIsAndroid) {
+            $('#app').attr('href', androidurl);
+            $('#download').attr('href', androidurl);
+        } else {
+            $('#app').attr('href', iosurl);
+            $('#download').attr('href', iosurl);
+        }
+        window.onload = function () {
+            var height = $('.download').height();
+            $('.btTxt').attr('style', 'bottom: ' + (5) + 'px');
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        }
+    </script>
+</body>
+
+</html>
