@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="keywords" content="小影记" />
+    <meta name="description" content="" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>小影记</title>
+    <link rel="icon" href="https://hybrid.xiaoying.tv/web/GH/img/favicon.ico">
+    <script>
+        //声明_czc对象:
+        var _czc = _czc || [];
+        //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+        _czc.push(["_setAccount", "1274904166"]);
+    </script>
+    <script
+        type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1274904166'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1274904166' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script src="https://hybrid.xiaoying.tv/web/slidePlus/zepto.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #cnzz_stat_icon_1274904166 {
+            display: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        .yushan {
+            width: 20px;
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            opacity: 0.8;
+            z-index: 8;
+        }
+
+        .bg {
+            width: 100%;
+        }
+
+        .videoBox {
+            position: relative;
+        }
+
+        #videoplaypart {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            width: 100%;
+        }
+
+        /*.loading {*/
+        /*position: absolute;*/
+        /*width: 50px;*/
+        /*left: 50%;*/
+        /*top: 50%;*/
+        /*margin-left: -25px;*/
+        /*margin-top: -25px;*/
+        /*z-index: 9;*/
+        /*}*/
+        .btTxt {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 9;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .download {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <img src="https://hybrid.xiaoying.tv/web/vivaVideo/img/shizhesclogo.png" class="yushan"> -->
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/slidePlus/20180926/img/h5_01.jpg?2018" alt="" />
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/slidePlus/20180926/img/h5_02.jpg" alt="" />
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/slidePlus/20180926/img/h5_03.jpg" alt="" />
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/slidePlus/20180926/img/h5_04.jpg" alt="" />
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/slidePlus/20180926/img/h5_05.jpg" alt="" />
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/slidePlus/20180926/img/h5_06.jpg" alt="" />
+        <p class="btTxt">版权：新疆佳和安达网络科技有限公司</p>
+    </div>
+    <a id="download" onclick="_czc.push(['_trackEvent', '点击下载', '点击下载', '点击下载']);"
+        href="https://itunes.apple.com/app/apple-store/id1023346358?pt=2088378&ct=baidu2&mt=8">
+        <img class="download" src="https://hybrid.xiaoying.tv/web/slidePlus/20180926/img/download.png" alt="" />
+    </a>
+    <script>
+        //    var sUserAgent = navigator.userAgent.toLowerCase();
+        //    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        //    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        //    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        //    window.channel = 'common';
+        var url = 'https://app.appsflyer.com/id1023346358?pid=baidusem'
+        if (window.location.href.indexOf('baidu=2') !== -1) {
+            url = 'https://app.appsflyer.com/id1023346358?pid=baidusem'
+        }
+        $('.main').click(function () {
+            window.location.href = url;
+        });
+        $('#download').attr('href', url);
+        window.onload = function () {
+            var height = $('.download').height();
+            $('.btTxt').attr('style', 'bottom: ' + (height + 5) + 'px');
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        }
+    </script>
+</body>
+
+</html>
