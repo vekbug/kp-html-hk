@@ -44,7 +44,12 @@
                 if (id == '') {
                     id = "38";
                 }
-                window.location.href = "http://dl.cm.ksmobile.com/static/res/fixed/e2/6106" + id + ".apk"
+                if (isIos()) {
+                    window.location.href = "https://itunes.apple.com/cn/app/id1468284294";
+                } else {
+                    window.location.href = "http://dl.cm.ksmobile.com/static/res/fixed/e2/6106" + id + ".apk";
+                }
+
             });
         });
     </script>
