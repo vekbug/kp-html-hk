@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #download {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="download" class="downloadclz">
+        <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.png" alt="">
+        <img src="images/foot.png" class="downloadclz" style="position: absolute;top: 350px;left: 10%; width: 80%">
+        <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 0%">
+            新疆佳和安达网络科技有限公司</div>
+    </div>
+
+    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.downloadclz').click(function (e) {
+                if (isIos()) {
+                    window.location.href = "https://itunes.apple.com/cn/app/id1472337276?mt=8";
+                } else {
+                    window.location.href = "https://api.laiyoubao.com/upload/default/20191022/9fcd3b87d74fcd355a77d37b6fe2d891.apk";
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>
