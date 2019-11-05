@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>恋恋花名册</title>
+</head>
+<style>
+*{ margin:0; padding:0; border:0;}
+.left{ float:left;}
+.right{ float:right;}
+.clear{ clear:both;}
+
+</style>
+
+<body>
+<div style="background:url(images/llbg.jpg); background-size:100%; height:185vw;">
+	<div style="position:absolute; top:17vw; left:13.5vw; width:72vw;"><img src="images/qie2.gif" style="width:100%;"></div>
+    <div class="downloadclz" style="position:absolute; top:165vw; width:80vw; left:10vw; text-align:center;"><img src="images/menu.png" width="100%"></div>
+</div>
+    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.downloadclz').click(function (e) {
+                var id = getParam('id');
+                if (id == '') {
+                    id = "38";
+                }
+                if (isIos()) {
+                    window.location.href = "https://itunes.apple.com/cn/app/id1468284294";
+                } else {
+				
+                if (id == "38") { window.location.href = "http://dl.cm.ksmobile.com/static/res/fixed/e2/610638.apk" };
+                if (id == "39") { window.location.href = "http://dl.cm.ksmobile.com/static/res/fixed/54/610639.apk" };
+                if (id == "40") { window.location.href = "http://dl.cm.ksmobile.com/static/res/fixed/d8/610640.apk" };
+                if (id == "41") { window.location.href = "http://dl.cm.ksmobile.com/static/res/fixed/f6/610641.apk" };
+                if (id == "43") { window.location.href = "http://dl.cm.ksmobile.com/static/res/fixed/8b/610643.apk" };
+                }
+
+            });
+        });
+    </script>
+</body>
+</html>
