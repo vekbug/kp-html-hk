@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="telephone=no,email=no" name="format-detection"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/css/base.css">
+    <link rel="stylesheet" href="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/css/style.css">
+    <link rel="stylesheet" href="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/css/animate.min.css">
+    <script src="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/js/vue.js"></script>
+    <script src="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/js/jquery-2.1.4.js"></script>
+    <script src="http://sdk.talkingdata.com/app/h5/v1?appid=8B4E42071ECF44759F2ECF1FDCA48C0B&vn=点击器百度投放&vc=1.0.1"></script>
+    <style>
+
+    </style>
+    <title></title>
+</head>
+<body>
+<div id="h5">
+    <div class="wb100 img-area">
+        <!--<img src="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/images/landing_1.png">-->
+        <img src="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/images/landing_1.png">
+        <div class="wb100 absolute" :style="'top:'+240/720*width+'px'" id="yourElement">
+            <!--<a href="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/apk/wan_neng_dian_ji.apk">-->
+                <div @click="getFree()" class="center text-center warpper-white radius30 Fb" style="color: #4f67fd" :style="'width:'+325/720*width+'px;height:'+90/720*width+'px;line-height:'+90/720*width+'px;font-size:'+46/720*width+'px'">
+                    免费体验
+                </div>
+            <!--</a>-->
+        </div>
+        <div class="wb100 absolute" :style="'top:'+390/720*width+'px'">
+            <div class="center" :style="'width:'+430/720*width+'px;height:'+815/720*width+'px'">
+                <!--<img src="images/shadow.png" class="absolute" :style="'width:'+420/720*width+'px;height:'+815/720*width+'px'" style="">-->
+                <img src="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/images/gif.gif" class="center" :style="'width:'+415/720*width+'px;height:'+815/720*width+'px'">
+            </div>
+        </div>
+        <img src="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/images/landing_2.png">
+        <img src="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/images/landing_3.png">
+        <!--<img src="images/copyright.jpg">-->
+        <div class="wb100 Fwhite text-center" style="background-color: #333333" :style="'height:'+150/720*width+'px;font-size:'+24/720*width+'px'">
+            <div class="clear" :style="'height:'+44.25/720*width+'px'"></div>
+            <div class="wb100" :style="'height:'+61.5/720*width+'px'">
+                <p>电话：0351-87654565 地址：山西太原小街桥80号</p>
+                <p>黑龙江省中追追溯科技有限公司 版权所有</p>
+            </div>
+        </div>
+        <div class="text-center fixed wb100" style="bottom:0">
+            <!--:style="'bottom:'+60/720*width+'px'"-->
+            <!--<a href="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/apk/wan_neng_dian_ji.apk">-->
+                <!--<div @click="getDownload()" class="Fwhite center radius30" style="background-color: #4f67fd" :style="'width:'+600/720*width+'px;height:'+90/720*width+'px;line-height:'+90/720*width+'px;font-size:'+26/720*width+'px'">-->
+                    <!--立即下载-->
+                <!--</div>-->
+            <div class="wb100" :style="'height:'+150/720*width+'px'">
+                <img class="wb100" src="https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/images/download.png" :style="'height:'+150/720*width+'px'" @click="getDownload()">
+            </div>
+            <!--</a>-->
+        </div>
+        <div class="clear" :style="'height:'+150/720*width+'px'"></div>
+    </div>
+</div>
+<script>
+    var vm = new Vue({
+        el: "#h5",
+        data: {
+            width: "",
+            height: "",
+        },
+        methods: {
+            getFree:function getFree() {
+                TDAPP.onEvent("点击免费体验");
+                window.location.href = "https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/apk/wan_neng_dian_ji.apk";
+            },
+            getDownload:function getDownload() {
+                TDAPP.onEvent("点击立即下载");
+                window.location.href = "https://mobile-pet.oss-cn-qingdao.aliyuncs.com/landing/apk/wan_neng_dian_ji.apk";
+            }
+        },
+        created: function created() {
+            var _this = this;
+            _this.width = $(window).width();
+            _this.height = $(window).height();
+            $('#yourElement').addClass('animated infinite pulse');
+        }
+    });
+</script>
+</body>
+</html>
