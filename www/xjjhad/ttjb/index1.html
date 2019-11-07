@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #download {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="download" class="downloadclz">
+		<img class="downloadclz" id="b_img" style="width:100%; height:100%; display: block;" src="images/top.png" alt="">
+        <a href="http://cdnfile.jianhuo.top/res/apk/baidu1.apk"><img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt=""></a>
+        <div style="width: 100%;text-align: center; font-size: 12px;color: #fff; position: absolute; bottom: 0;">
+            新疆佳和安达网络科技有限公司</div>
+    </div>
+    <img class="downloadclz" id="footer" style="position: fixed;width:100%;bottom:2%;left:0;" src="./images/foot.png">
+
+    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.downloadclz').click(function (e) {
+                var id = getParam('id');
+                if (id == '') {
+                    id = "1";
+                }
+                if (isIos()) {
+                    if (id == '1') { window.location.href = "https://at.umtrack.com/onelink/T11TTb"; }
+                    if (id == '2') { window.location.href = "https://at.umtrack.com/onelink/nGbeey"; }
+                    if (id == '3') { window.location.href = "https://at.umtrack.com/onelink/C0z8va"; }
+                    if (id == '4') { window.location.href = "https://at.umtrack.com/onelink/XvemWf"; }
+                    if (id == '5') { window.location.href = "https://at.umtrack.com/onelink/bWvi8D"; }
+                    if (id == '6') { window.location.href = "https://at.umtrack.com/onelink/PH9nGr"; }
+                    if (id == '7') { window.location.href = "https://at.umtrack.com/onelink/fq81fi"; }
+                    if (id == '8') { window.location.href = "https://at.umtrack.com/onelink/maGH5f"; }
+                    if (id == '9') { window.location.href = "https://at.umtrack.com/onelink/neeSXv"; }
+                } else {
+                window.location.href = "http://cdnfile.jianhuo.top/res/apk/baidu" + id + ".apk";}
+            });
+        });
+    </script>
+</body>
+
+</html>
