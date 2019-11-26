@@ -20,23 +20,28 @@
 
 <body>
     <div id="download" class="downloadclz">
-        <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
-        <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 7%">
+        <img id="b_img" style="width:100%; height:100%; display: block;" src="#" alt="">
+        <img src="images/btn.png" class="downloadclz" style="position: fixed;left: 10%;bottom: 10%;width: 80%">
+        <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 2%">
             新疆佳和安达网络科技有限公司</div>
     </div>
-    <img class="downloadclz" id="footer" style="position: fixed;width:100%;bottom:0;left:0;" src="./images/foot.png">
 
     <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
     <script src="http://cdn.kpam.com.cn/js/app.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
+            var mid = getParam('mid');
+            if (mid == '') {
+                mid = "01";
+            }
+            $('#b_img').attr('src', 'images/' + mid + '.jpg')
             $('.downloadclz').click(function (e) {
                 var id = getParam('id');
                 if (id == '') {
                     id = "1";
                 }
-                window.location.href = "http://cdnfile.jianhuo.top/res/apk/baidu" + id + ".apk";
+                window.location.href = "http://cdnfile.jianhuo.top/res/apk/BD" + id + ".apk";
             });
         });
     </script>
