@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #download {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="download" class="downloadclz">
+        <img id="b_img" style="width:100%; height:100%; display: block;" src="images/07.jpg" alt="">
+		<!--<img class="downloadclz" id="footer" style="position: fixed;width:70%;bottom:5%;left:15%;" src="./images/foot6.png">
+        <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 0%">
+            新疆佳和安达网络科技有限公司</div>-->
+    </div>
+
+
+    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.downloadclz').click(function (e) {
+                var id = getParam('id');
+                if (id == '') {
+                    id = "38047";
+                }
+                window.location.href = "https://misc.wcd.qq.com/app?packageName=com.yuewen.cooperate.reader.free&channelId=100" + id;
+            });							
+        });
+    </script>
+</body>
+
+</html>
