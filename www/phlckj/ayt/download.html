@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>首页</title>
+</head>
+
+<body>
+    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
+    <script type="text/javascript" charset="UTF-8">
+        function getParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)
+                return decodeURI(r[2]);
+            return '';
+        }
+        var id = getParam('id');
+        if (id == '') {
+            id = "3636";
+        }
+        if (isIos()) {
+            window.location.href = "itms-services://?action=download-manifest&url=https://plist.51yuntu.cn/plist/download/001.plist";
+        } else {
+            window.location.href = "http://dl.51yuntu.cn/cloud-bigphone-android-haima00000" + id + "_2.3.8.apk";
+        }
+    </script>
+</body>
+
+</html>
