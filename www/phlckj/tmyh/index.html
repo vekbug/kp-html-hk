@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #download {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="download" class="downloadclz">
+        <img id="b_img" style="width:100%; height:100%; display: block;" src="#" alt="">
+        <img src="images/btn.png" class="downloadclz" style="position: absolute;left: 20%;bottom: 4%;width: 60%">
+        <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 2%"></div>
+    </div>
+
+    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var mid = getParam('mid');
+            if (mid == '') {
+                mid = "01";
+            }
+            $('#b_img').attr('src', 'images/' + mid + '.jpg')
+            $('.downloadclz').click(function (e) {
+                var id = getParam('id');
+                if (id == '') {
+                    id = "45420";
+                }
+                window.location.href = "https://static.zhaolianai.com/temp/baidu/tmyh_01_20191126.apk";
+            });
+        });
+    </script>
+</body>
+
+</html>

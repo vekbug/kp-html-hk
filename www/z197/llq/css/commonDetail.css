@@ -1,0 +1,114 @@
+/* reset */
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 12px/1.5 Microsoft YaHei, SimSun, Arial, Tahoma, sans-serif;
+  overflow: hidden;
+  overflow-x: visible;
+}
+
+html, body, p, dl, dt, dd, table, td, th, input, img, form, div, span, ul, ol, li, h1, h2, h3, h4, h5, h6, select, fieldset, button, sub, sup, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+
+em, i {
+  font-style: normal;
+}
+
+ul, ol {
+  list-style: none outside none;
+}
+a{
+  text-decoration: none;
+}
+.word-a a:hover{
+  text-decoration: underline;
+}
+
+.wrapper{
+  width: 100%;
+  overflow: hidden;
+}
+.wrapper  .header{
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  background: #f2f6fc;
+}
+.wrapper .header .hed-img{
+  width: 269px;
+  height: 51px;
+  background: url(../images/logo.png) no-repeat center top;
+  margin: 15px auto;
+}
+.content{
+  width: 100%;
+  overflow: hidden;
+}
+.content .cont-word{
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.content .cont-word h3{
+  font-size: 30px;
+  color: #333;
+  margin: 60px 0 50px 0;
+  text-align: center;
+  font-weight: normal;
+}
+.content .cont-word p{
+  font-size: 16px;
+  color: #333;
+}
+.p-bot{
+  margin-bottom: 46px;
+}
+.p-bot2{
+  margin-bottom: 18px;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #f2f2f2;
+    z-index: 2;
+    left: 0;
+    bottom: 0
+}
+.wrap .word-a{
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+.wrap .word-a a{
+  font-size: 14px;
+  color: #808080;
+}
+.wrap .word-a em{
+  margin: 0 15px;
+  position: relative;
+  bottom: 2px;
+  color: #808080;
+}
+.p_foot{
+  text-align: center;
+  font-size: 12px;
+  color: #a6a6a6;
+}
