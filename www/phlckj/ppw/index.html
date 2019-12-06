@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>批批网服装批发</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 120%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            overflow: hidden;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .button_layer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-image: url("images/alpha.png");
+            width: 100%;
+            height: 60px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .download {
+            text-decoration: none;
+            background-color: #ff682f;
+            color: white;
+            height: 50px;
+            width: 180px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 28px;
+            border-radius: 25px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -90px;
+            margin-top: -25px;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var screen_height = $(window).height();
+            $('.swiper-container').height(screen_height);
+        });
+    </script>
+</head>
+
+<body>
+    <div style="position: relative">
+        <!-- Swiper -->
+        <div class="swiper-container" style="height:740px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: url('images/pp_1.jpg');background-size: cover;"></div>
+                <div class="swiper-slide" style="background: url('images/pp_2.jpg');background-size: cover;"></div>
+                <div class="swiper-slide" style="background: url('images/pp_3.jpg');background-size: cover;"></div>
+                <div class="swiper-slide" style="background: url('images/pp_4.jpg');background-size: cover;"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div style="margin-bottom: 60px;" class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="button_layer"> <a class="download" href="#"> 下载批批网 </a> </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+        });
+    </script>
+    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.download').click(function (e) {
+                var id = getParam('id');
+                if (id == '') {
+                    id = "16";
+                }
+                window.location.href = "https://download.ppwang.com/Android_package/pp_sem" + id + "_signed.apk";
+            });
+        });
+    </script>
+</body>
+
+</html>
