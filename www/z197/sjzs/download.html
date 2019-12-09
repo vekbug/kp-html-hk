@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://lk.zhiniaotec.wang/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<title>首页</title>
+</head>
+<body>
+<script src="./js/jquery.min.js"></script>
+<script type="text/javascript" charset="UTF-8">
+		function getParam(name) {
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		    var r = window.location.search.substr(1).match(reg);
+		    if (r != null)
+		        return decodeURI(r[2]);
+		    return '';
+		}
+        var id = getParam('id');
+            if(id == '') {
+                id = "6";
+            }
+            window.location.href = "https://download.2345.cn/2345yidong/sc-kunpengsgsem" + id + "_cpc_ljj.apk";
+</script>
+
+
+</body></html>
