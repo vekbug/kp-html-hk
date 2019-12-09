@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://h5-uc.dyreader.cn/h5/ysdq_dy/book_html/book_app.html -->
+<html lang="en" data-dpr="1" style="font-size: 41.1px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="http://h5-uc.dyreader.cn/h5/ysdq_dy/img/dy_logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./index_files/reset.min.css">
+    <script src="./index_files/flexible.min.js" type="text/javascript" charset="utf-8"></script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script src="./index_files/public.min.js" type="text/javascript" charset="utf-8"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点阅小说</title>
+    <style type="text/css">
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(0deg, #f6f4ee 0%, #ffffff 100%);
+        }
+
+        .book_app {
+            width: 100%;
+            height: 100%;
+            background-image: url("./index_files/right1_rad.png"), url("./index_files/right2_rad.png"), url("./index_files/left_rad.png"), url("./index_files/app_txt.png");
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+            background-size: 8.44rem 8.44rem, 3.84rem 2.826666rem, 1.533333rem 4.146666rem, 4.52rem 0.68rem;
+            background-position: 5rem -4.2rem, right bottom, left 8.933333rem, center 13.653333rem;
+            position: relative;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .book_app_logo {
+            width: 7.88rem;
+            height: 2.066666rem;
+            margin: 1.733333rem auto 0;
+            display: block;
+        }
+
+        .book_app_logo:active {
+            opacity: 0.5;
+        }
+
+        .book_appimgbox {
+            width: 100%;
+            position: relative;
+            font-size: 0;
+            line-height: 4.506666rem;
+            height: 4.506666rem;
+            text-align: center;
+            margin-top: 1.32rem;
+            vertical-align: text-bottom;
+        }
+
+        .book_li {
+            width: 2.773333rem;
+            height: 3.733333rem;
+            display: inline-block;
+            box-shadow: 0 0.173333rem 0.973333rem 0 rgba(90, 61, 5, 0.2);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            opacity: 0.7;
+        }
+
+        .book_li:nth-child(1) {
+            width: 2.773333rem;
+            height: 3.733333rem;
+            bottom: 0;
+            left: 0.8rem;
+            z-index: 2;
+            opacity: 0.7;
+        }
+
+        .book_li:nth-child(2) {
+            width: 3.213333rem;
+            height: 4.28rem;
+            left: 2.16rem;
+            z-index: 3;
+            opacity: 0.9;
+        }
+
+        .book_li:nth-child(3) {
+            width: 3.32rem;
+            height: 4.506666rem;
+            left: 3.32rem;
+            z-index: 5;
+            opacity: 1;
+        }
+
+        .book_li:nth-child(4) {
+            width: 3.213333rem;
+            height: 4.28rem;
+            left: 4.64rem;
+            z-index: 3;
+            opacity: 0.9;
+        }
+
+        .book_li:nth-child(5) {
+            left: 6.4rem;
+            z-index: 2;
+            opacity: 0.7;
+        }
+
+        .book_li_img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .book_appbtn {
+            width: 7.413333rem;
+            height: 1.693333rem;
+            display: block;
+            margin: 1.28rem auto 0;
+            border: none;
+            outline: none;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            background: url("./index_files/book_btn.png") no-repeat center center;
+            background-size: 100% 100%;
+            border: 1px solid transparent;
+            outline: none;
+        }
+
+        .book_appbtn:active {
+            width: 7.413333rem;
+            height: 1.693333rem;
+            display: block;
+            margin: 1.28rem auto 0;
+            background: url("./index_files/book_btnactive.png") no-repeat center center;
+            background-size: 100% 100%;
+            border: 1px solid transparent;
+            outline: none;
+            border: none;
+            outline: none;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+
+<body style="font-size: 192px;">
+    <div class="book_app"> <img class="book_app_logo" onclick="icondownapp()" src="./index_files/app_logo.png">
+        <ul class="book_appimgbox">
+            <li class="book_li" onclick="downapp(1)"><img class="book_li_img" src="./index_files/toutiao_2_book_1.jpg"
+                    data-src="./index_files/toutiao_2_book_1.jpg"></li>
+            <li class="book_li" onclick="downapp(2)"><img class="book_li_img" src="./index_files/toutiao_2_book_2.jpg"
+                    data-src="./index_files/toutiao_2_book_2.jpg"></li>
+            <li class="book_li" onclick="downapp(3)"><img class="book_li_img" src="./index_files/toutiao_2_book_3.jpg"
+                    data-src="./index_files/toutiao_2_book_3.jpg"></li>
+            <li class="book_li" onclick="downapp(4)"><img class="book_li_img" src="./index_files/toutiao_2_book_4.jpg"
+                    data-src="./index_files/toutiao_2_book_4.jpg"></li>
+            <li class="book_li" onclick="downapp(5)"><img class="book_li_img" src="./index_files/toutiao_2_book_5.jpg"
+                    data-src="./index_files/toutiao_2_book_5.jpg"></li>
+        </ul> <button type="button" onclick="btndownapp()" class="book_appbtn"></button>
+    </div>
+    <script
+        type="text/javascript"> documentsready(function () { bookreport({ acode: 83, cur_url: "ad_dyxs_5", }); imgonload(); }); window.onload = function () { bookreport({ acode: 51, cur_url: "ad_dyxs_5", }); }; function downapp(num) { gotobookapp({ acode: 0, cur_url: "ad_dyxs_5", ap: "book_" + num }); }; function btndownapp(num) { gotobookapp({ acode: 0, cur_url: "ad_dyxs_5", ap: "book_dow" }); }; function icondownapp(num) { gotobookapp({ acode: 0, cur_url: "ad_dyxs_5", ap: "icon_dow" }); }; function imgonload() { for (var i = 0; i < 5; i++) { var a = document.getElementsByClassName('book_li_img')[i]; var olimg = new Image(); olimg.src = a.dataset.src; olimg.onload = (function (src) { document.getElementsByClassName('book_li_img')[i].src = src; })(a.dataset.src) }; }; </script>
+</body>
+
+</html>
