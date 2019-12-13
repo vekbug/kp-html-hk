@@ -156,8 +156,34 @@
                     data-src="./index_files/toutiao_2_book_5.jpg"></li>
         </ul> <button type="button" onclick="btndownapp()" class="book_appbtn"></button>
     </div>
-    <script
-        type="text/javascript"> documentsready(function () { bookreport({ acode: 83, cur_url: "ad_dyxs_5", }); imgonload(); }); window.onload = function () { bookreport({ acode: 51, cur_url: "ad_dyxs_5", }); }; function downapp(num) { gotobookapp({ acode: 0, cur_url: "ad_dyxs_5", ap: "book_" + num }); }; function btndownapp(num) { gotobookapp({ acode: 0, cur_url: "ad_dyxs_5", ap: "book_dow" }); }; function icondownapp(num) { gotobookapp({ acode: 0, cur_url: "ad_dyxs_5", ap: "icon_dow" }); }; function imgonload() { for (var i = 0; i < 5; i++) { var a = document.getElementsByClassName('book_li_img')[i]; var olimg = new Image(); olimg.src = a.dataset.src; olimg.onload = (function (src) { document.getElementsByClassName('book_li_img')[i].src = src; })(a.dataset.src) }; }; </script>
+    <script type="text/javascript">
+        documents.ready(function () {
+            // bookreport({ acode: 83, cur_url: "ad_dyxs_5", });
+            imgonload()
+        })
+        window.onload = function () {
+            // bookreport({ acode: 51, cur_url: "ad_dyxs_5", })
+        }
+        function downapp(num) {
+            gotobookapp({ acode: 0, cur_url: "ad_dyxs_5", ap: "book_" + num })
+        }
+        function btndownapp(num) {
+            gotobookapp({ acode: 0, cur_url: "ad_dyxs_5", ap: "book_dow" });
+        }
+        function icondownapp(num) {
+            gotobookapp({ acode: 0, cur_url: "ad_dyxs_5", ap: "icon_dow" });
+        }
+        function imgonload() {
+            for (var i = 0; i < 5; i++) {
+                var a = document.getElementsByClassName('book_li_img')[i];
+                var olimg = new Image();
+                olimg.src = a.dataset.src;
+                olimg.onload = (function (src) {
+                    document.getElementsByClassName('book_li_img')[i].src = src;
+                })(a.dataset.src)
+            };
+        }
+    </script>
 </body>
 
 </html>
