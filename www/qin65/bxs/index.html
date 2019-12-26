@@ -34,7 +34,12 @@
                 if (id == '') {
                     id = "1";
                 }
-                window.location.href = "http://media.winbaoxian.com/apk/sem/bxs_semsogou.apk";
+                if (isIos()) {
+                    window.location.href = "https://itunes.apple.com/cn/app/id981360164?mt=8";
+                } else {
+                    window.location.href = "http://media.winbaoxian.com/apk/sem/bxs_semsogou.apk";
+                }
+
             });
         });
     </script>
