@@ -1,0 +1,478 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body, nav, dl, dt, dd, p, h1, h2, h3, h4, ul, ol, li, input, button, textarea, footer {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 1.6rem 'Microsoft Yahei';
+    background: #f4f4f4;
+    min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.6rem;
+}
+b{
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+}
+section, article {
+    display: block;
+}
+.button{
+    background: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    clear: both
+}
+
+input[type="button"]{
+    border: 0;
+}
+.img {
+    position: relative;
+    overflow: hidden;
+}
+
+.img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.relative{
+    position: relative !important;
+}
+.box {
+    max-width: 750px;
+    min-width: 320px;
+    margin: auto;
+}
+
+/*SEO ios推广页*/
+.content1{
+    margin: 0.14rem;
+}
+.content1 .text1{
+    position: relative;
+    padding: 0.38rem 0 0.4rem;
+    background: #fff;
+    border-bottom: 1px dashed #ddd;
+}
+.content1 .text1 .img{
+    margin: 0 auto 0.32rem;
+    width: 2.2rem;
+    height: 1.75rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.content1 .text1 .title{
+    width: 90%;
+    margin: 0 auto 0.2rem;
+    text-align: center;
+    line-height: 0.48rem;
+    font-size: 0.36rem;
+    color: #333;
+}
+.content1 .text1 .text11{
+    height: 0.38rem;
+    line-height: 0.38rem;
+    text-align: center;
+}
+.content1 .text1 .text11 span{
+    position: relative;
+    top: -0.54rem;
+    line-height: 0.38rem;
+    font-size: 0.24rem;
+    color: #666;
+    display: inline-block;
+}
+.content1 .text1 .text11 span b{
+    margin: 0 0.1rem;
+}
+.content1 .text1 .text11 span.star{
+    width: 0.19rem;
+    height: 0.19rem;
+    margin-left: 0.05rem;
+    background: url(../images/star2.png);
+    background-size: 100%;
+}
+.content1 .text1 .text11 span.star.on{
+    background: url(../images/star1.png);
+    background-size: 100%;
+}
+.content1 .text1 .button{
+    position: relative;
+    width: 100%;
+    height: 0.9rem;
+    bottom: 0;
+    max-width: 750px;
+    z-index: 15;
+}
+
+.content1 .text1 .button input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 2.5rem;
+    height: 0.71rem;
+    font-size: 0.28rem;
+    color: #f4f4f4;
+    background:#007aff;
+    border-radius: 0.1rem;
+    background-size:auto 100%;
+}
+.content1 .text1 .round{
+    position: absolute;
+    bottom: -0.13rem;
+    right: -0.13rem;
+    width: 0.26rem;
+    height: 0.26rem;
+    background: #f4f4f4;
+    border-radius: 50%;
+    z-index:10;
+}
+.content1 .text1 .round1{
+    left: -0.13rem;
+}
+.content1 .text2{
+    margin-bottom: 0.32rem;
+    background: #fff;
+    border-top:1px solid #fff;
+}
+.app_img_box{
+    padding: 0.25rem 0;
+    margin: 0 0.2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: block;
+}
+.app_img li{
+    float: left;
+    width: 2.6rem;
+    margin: 0 0.06rem;
+    font-size:0;
+    text-align: center;
+    border: 0.02rem solid #ececec;
+}
+.app_img li img{
+    width: 100%;
+}
+.app_text {
+    margin-top: 0.2rem;
+    text-align: center;
+    font-size: 0.26rem;
+    color: #666;
+    line-height: 0.5rem;
+    display: none;
+}
+.app_img_icon {
+    margin: auto;
+    width: 1.1rem;
+    height: 0.18rem;
+    overflow: inherit;
+    display: none;
+}
+.app_img_icon img{
+    height: 0.36rem !important;
+}
+.app_img_icon1{
+    display: none;
+}
+.content1 .text3{
+    padding: 0 0.29rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+.content1 .text3 .title{
+    margin: 0.22rem 0 0.25rem;
+    line-height: 0.45rem;
+    font-size: 0.28rem;
+    color: #000;
+}
+.content1 .text31{
+    margin-bottom: 0.37rem;
+    line-height: 0.42rem;
+    font-size: 0.24rem;
+    color: #666;
+}
+.content1 .text31 b{
+    color: #0076ff;
+    margin-left: 0.05rem;
+}
+.content1 .text31 b i{
+    color: #666;
+    font-style: normal;
+}
+.content1 .text4{
+    margin-top: 15px;
+    background: #fff;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+.content1 .text4 .title{
+    margin: 0.5rem 0.28rem 0.14rem;
+    line-height: 0.55rem;
+    font-size: 0.28rem;
+    color: #000;
+}
+.list1{
+    margin: 0 0.2rem 0.2rem;
+}
+.list1 li{
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 25%;
+    height: 2.24rem;
+}
+.list1 li .img{
+   margin: auto;
+    width: 1.09rem;
+    height: 1.09rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+.list1 li p{
+    margin: 0.17rem 0;
+    font-size: 0.24rem;
+    color: #333;
+    line-height: 0.32rem;
+}
+.list1 li .button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0.97rem;
+    height: 0.45rem;
+    font-size: 0.22rem;
+    color: #0079ff;
+    border-radius: 0.05rem;
+    border:0.02rem solid #0079ff;
+}
+.bottom1 {
+    position: fixed;
+    width: 100%;
+    height: 1.05rem;
+    bottom: 0;
+    max-width: 750px;
+    z-index: 15;
+    border-top:1px solid #f6f6f6;
+    background: #fff;
+}
+.bottom2{
+    position: relative;
+    border-color: #eee;
+}
+
+.bottom1 .button{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 0.28rem;
+    color: #f4f4f4;
+    width: 4.92rem;
+    padding-left:0.5rem;
+    height: 0.71rem;
+    background: url(../images/button1.png) 1.8rem no-repeat #007aff;
+    border-radius: 0.1rem;
+    background-size:auto 100%;
+}
+.banner1{
+    width: 100%;
+    height: 12.18rem;
+}
+.content2{
+    margin: 0.33rem 0 0.5rem;
+}
+.content2 .title{
+    height: 0.25rem;
+    margin-left: 0.24rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.24rem;
+    color: #333;
+    line-height: 0.25rem;
+    padding-left: 0.07rem;
+    border-left: 0.03rem solid #f3058f;
+}
+.content2 .button{
+    background: transparent;
+}
+
+.popup_bg{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    background: rgba(0,0,0,0.71);
+    z-index:99;
+}
+
+.banner {
+    position: absolute;
+    width: 72.9%;
+    height: 9.65rem;
+    max-width: 547px;
+    left: 0;
+    top: -0.34rem;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.slideBox {
+    position: relative;
+    max-width: 547px;
+}
+
+.slideBox .hd{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    height: 0.2rem;
+    bottom: -0.68rem;
+    z-index: 1;
+}
+.slideBox .hd ul{
+    height: 0.2rem;
+    line-height: 0;
+}
+
+.slideBox .hd span {
+    position: relative;
+    top:-0.44rem;
+    display: inline-block;
+    width: 0.16rem;
+    height: 0.16rem;
+    cursor: pointer;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 0 0.09rem 0;
+    background: transparent;
+    border-radius: 0.085rem;
+    border: 0.02rem solid #fff;
+}
+
+.slideBox .hd span.on {
+    background: #fff;
+}
+
+.slideBox .bd {
+    position: relative;
+    height: 9.65rem;
+    margin: auto;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.slideBox .bd li {
+    position: relative;
+    text-align: center;
+}
+
+.slideBox .bd li img {
+    width:100%;
+}
+
+.slideBox .bd li a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.list2{
+    margin: 0.14rem 0.14rem 0;
+}
+.list2 li{
+    position: relative;
+    padding: 0.24rem 0 0.24rem 0.18rem;
+    margin-bottom: 0.14rem;
+    background: #fff;
+}
+.list2 li .img{
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0.15rem;
+    overflow: hidden;
+}
+.list2 li .text{
+    float: left;
+    height: 1.2rem;
+    margin-left: 0.24rem;
+    padding-right: 0.3rem;
+    width: 3.55rem;
+    border-right: 1px solid #ddd;
+}
+.list2 li .text h2{
+    margin-top: 0.06rem;
+    font-size: 0.28rem;
+    font-weight: normal;
+    line-height: 0.45rem;
+    color: #333;
+}
+.list2 li .text p{
+    height: 0.66rem;
+    line-height: 0.33rem;
+    font-size: 0.24rem;
+    color: #666;
+    overflow:hidden;
+}
+.list2 li .button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1.7rem;
+    height: 1.1rem;
+    background: url(../images/button2.png) center no-repeat;
+    background-size: 0.56rem;
+    border: 0;
+    cursor: pointer;
+}

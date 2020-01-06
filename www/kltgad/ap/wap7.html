@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:48px !important">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>爱碰 - 与附近的人私密视频约会</title>
+    <link href="./wap7/css/style.css" rel="stylesheet">
+    <script src="https://oss.059.com.cn/app/oss/tg/js/jquery.min.js"></script>
+    <script>
+        new function () {
+            var _self = this;
+            _self.width = 750;
+            _self.fontSize = 100;
+            _self.widthProportion = function () {
+                var p =
+                    ((document.body && document.body.clientWidth) ||
+                        document.getElementsByTagName("html")[0]
+                            .offsetWidth) / _self.width;
+                return p > 1 ? 1 : p < 0.2 ? 0.2 : p;
+            };
+            _self.changePage = function () {
+                var a = _self.widthProportion() * _self.fontSize;
+                document
+                    .getElementsByTagName("html")[0]
+                    .setAttribute(
+                        "style",
+                        "font-size:" + a + "px !important"
+                    );
+                if (
+                    a !=
+                    parseFloat(
+                        window.getComputedStyle(document.documentElement)[
+                            "fontSize"
+                            ]
+                    )
+                ) {
+                    document
+                        .getElementsByTagName("html")[0]
+                        .setAttribute(
+                            "style",
+                            "font-size:" +
+                            a /
+                            (parseFloat(
+                                window.getComputedStyle(
+                                    document.documentElement
+                                )["fontSize"]
+                                ) /
+                                a) +
+                            "px !important"
+                        );
+                }
+            };
+            _self.changePage();
+            window.addEventListener(
+                "resize",
+                function () {
+                    _self.changePage();
+                },
+                false
+            );
+        }();
+    </script>
+    <style id="tsbrowser_video_independent_player_style" type="text/css">
+        [tsbrowser_force_max_size] {
+            width: 100% !important;
+            height: 100% !important;
+            left: 0px !important;
+            top: 0px !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            transform: none !important;
+        }
+
+        [tsbrowser_force_fixed] {
+            position: fixed !important;
+            z-index: 9999 !important;
+            background: black !important;
+        }
+
+        [tsbrowser_force_hidden] {
+            opacity: 0 !important;
+            z-index: 0 !important;
+        }
+
+        [tsbrowser_hide_scrollbar] {
+            overflow: hidden !important;
+        }
+
+        [tsbrowser_display_none] {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+
+        [tsbrowser_force_show] {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+<section class="mall-container">
+    <div class="big_bg" style="background:url(./wap7/images/bg.jpg) no-repeat top center;background-size: cover"></div>
+    <div class="infomod">
+        <img src="./wap7/images/logo.png" alt="">
+        <h2>爱碰</h2>
+        <p>同城附近单身交友！可先视频聊天！</p>
+    </div>
+    <div class="category_carousel_coolmod">
+        <div class="category_carousel_cool owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage"
+                     style="transform: translate3d(-864px, 0px, 0px); transition: 0.45s; width: 2016px;">
+                    <div class="owl-item cloned" style="width: 288px;">
+                        <div class="item">
+                            <img src="./wap7/images/a1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 288px;">
+                        <div class="item">
+                            <img src="./wap7/images/a2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 288px;">
+                        <div class="item">
+                            <img src="./wap7/images/tcjy.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item active" style="width: 288px;">
+                        <div class="item">
+                            <img src="./wap7/images/a1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 288px;">
+                        <div class="item">
+                            <img src="./wap7/images/a2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 288px;">
+                        <div class="item">
+                            <img src="./wap7/images/tcjy.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 288px;">
+                        <div class="item">
+                            <img src="./wap7/images/a1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav disabled">
+                <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
+                <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
+            </div>
+            <div class="owl-dots disabled"></div>
+        </div>
+    </div>
+    <footer class="moonmod">
+        <img src="./wap7/images/moon_bg.png" alt="moonbg">
+        <div class="bg" onclick="dl();">
+            <div class="btnImmediatelyopen"></div>
+            <p>乌鲁木齐智博恒冠通信科技有限责任公司</p>
+        </div>
+    </footer>
+</section>
+<script src="./wap7/js/owl.js"></script>
+<script src="https://public.changliaotx.com/ms_public.php/union/script/landing"></script>
+<script type="text/javascript" src="http://res.cdn.openinstall.io/openinstall.js"></script>
+<script src="http://tjs.yqtj.com/n/down/action_outside.js"></script>
+<script type="text/javascript">
+    function dl() {
+        smartDownload();
+    }
+</script>
+<script>
+    $(function () {
+        $('.category_carousel_cool').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            autoplayHoverPause: true,
+            mouseDrag: false,
+            smartSpeed: 450
+        })
+    })
+</script>
+<div style='display:none'>
+    <script type="text/javascript" src="https://s5.cnzz.com/z_stat.php?id=1277636623&web_id=1277636623"></script>
+</div>
+</body>
+</html>

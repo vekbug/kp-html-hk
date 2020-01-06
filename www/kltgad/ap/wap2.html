@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <title>【爱碰】-结识附近的人，开启一对一私密视频聊天！</title>
+    <link rel="apple-touch-icon-precomposed" href="wap2/image/logo.png">
+    <link rel="icon" type="image/png" href="wap2/image/logo.png">
+    <link rel="stylesheet" href="wap2/css/style.css">
+    <script src="wap2/js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            document.documentElement.style.fontSize = window.innerWidth / 7.2 + 'px';
+        });
+    </script>
+    <script type="text/javascript" src="http://res.cdn.openinstall.io/openinstall.js"></script>
+    <script src="http://tjs.yqtj.com/n/down/action_outside.js"></script>
+    <script type="text/javascript">
+        function dl() {
+            smartDownload();
+        }
+    </script>
+    <script>
+        $(function () {
+            var browser = {
+                versions: function () {
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    return {
+                        qqclient: !!u.toLowerCase().match(/qq\//i),
+                        iPad: u.indexOf('iPad') > -1, //是否iPad
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                        weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）,
+                        android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+                    };
+                }(),
+                language: (navigator.browserLanguage || navigator.language).toLowerCase(),
+                referrer: document.referrer,
+                channel: function () {
+                    var name = "c";
+                    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                    var r = window.location.search.substr(1).match(reg);
+                    var res = {
+                        f: 1,
+                        c: 1
+                    };
+
+                    if (r != null) {
+                        var c = decodeURI(r[2]).split("_");
+                        res.f = c[0];
+                        res.c = c[1];
+                    }
+                    return res;
+                }
+            };
+            //安卓
+            if (browser.versions.android) {
+                $(".butT").click(function () {
+                    if (browser.versions.weixin || browser.versions.qqclient) {
+                        document.getElementById("chart").src = "wap2/image/weixin_tip_t.png";
+                        document.getElementById("JweixinTip").style.display = "block";
+                        dl();
+                    } else {
+                        dl();
+                    }
+
+                });
+            }
+            //ios
+            if (browser.versions.ios || browser.versions.iPad) {
+                $(".butT").click(function () {
+                    if (browser.versions.weixin || browser.versions.qqclient) {
+                        dl();
+                    } else {
+                        dl();
+                    }
+                });
+            }
+            //电脑
+            if (!browser.versions.android && !browser.versions.ios && !browser.versions.iPad) {
+                $(".butT").click(function () {
+                    dl();
+                });
+                $(".erwei").click(function () {
+                    dl();
+                });
+            } else {
+                setTimeout(function () {
+                    $("#show1").css({"display": "block"});
+                }, 2000);
+            }
+
+            var imgSrc = $(".footImg img").attr("src");
+            var videoText = $(".footName").text();
+            $(".videoImg img").attr("src", imgSrc);
+            $(".videoBg").attr("src", imgSrc);
+            $(".videoName").text(videoText);
+            $(".mainpic").click(function () {
+                $("#show").css({"display": "block"});
+            });
+            $(".butO").click(function () {
+                $("#video").css({"display": "block"});
+                setTimeout(function play() {
+                    $("#show").css({"display": "block"});
+                }, 1600)
+            });
+            $(".close").click(function () {
+                $("#show,#video,#show1").css({"display": "none"});
+            });
+            var erweiUrl1 = "http://pan.baidu.com/share/qrcode?w=1000&h=1000&url=" + window.location.href;
+            $(".erwei img").attr("src", erweiUrl1);
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <img class="fl" src="wap2/image/bg.jpg" width="100%" height="100%"/>
+    <p class="clear">系统已为你筛选附近的人</p>
+</div>
+<div id="main"></div>
+<div class="kb"></div>
+<div id="footer"></div>
+<div id="show">
+    <div class="install">
+        <img class="close" src="wap2/image/close.png" width="100%" height="100%"/>
+        <p class="showText">下载【爱碰APP】直接发起视频聊天！</p>
+        <p class="butT">下载APP与她邂逅</p>
+    </div>
+</div>
+<div id="show1">
+    <div class="install">
+        <img class="close" src="wap2/image/close.png" width="100%" height="100%"/>
+        <p class="showText">下载【爱碰APP】直接发起视频聊天！</p>
+        <p class="butT">下载APP与她邂逅</p>
+    </div>
+</div>
+<div id="video">
+    <img class="videoBg" src="" width="100%" height="auto"/>
+    <div class="videoImg">
+        <img src="" width="100%" height="auto"/>
+    </div>
+    <p class="videoText">
+        正与&nbsp;<span class="videoName"></span>&nbsp;视频连接中<span class="on">...</span>
+    </p>
+</div>
+<div id="JweixinTip">
+    <img id="chart" src="wap2/image/weixin_tip.png"/>
+</div>
+<!--安装指南-->
+<div class="azzn"
+     style=" z-index: 99999;width:100%; height:auto; position:absolute; top:0; left:0; display:none; background:rgba(0,0,0,0.7);">
+    <p style="width: 100%; color:#fff; position:fixed; top:0; left:0; z-index:999; height:0.8rem; background:#F16EA2; text-align:left; line-height:0.8rem; font-size:0.32rem">
+        苹果安装指南
+    </p>
+    <div class="img" style=" width:100%; height:auto; overflow:hidden; padding-top:1rem; padding-bottom:1.8rem;">
+        <img src="wap2/image/user/1.jpg"/>
+        <img src="wap2/image/user/2.jpg"/>
+        <img src="wap2/image/user/3.jpg"/>
+        <img src="wap2/image/user/4.jpg"/>
+        <img src="wap2/image/user/5.jpg"/>
+        <img src="wap2/image/user/6.jpg"/>
+    </div>
+</div>
+<div class="erwei"><img src=""/></div>
+<script>
+    var mainpicObj = [
+        {
+            mpicImg: "1.jpg",
+            mpicAut: "block",
+            mpicSure: "block",
+            mpicName: "清子",
+            mpicAge: "22岁",
+            mpicAdd: "1.4km"
+        },
+        {
+            mpicImg: "2.jpg",
+            mpicAut: "none",
+            mpicSure: "block",
+            mpicName: "小伍",
+            mpicAge: "24岁",
+            mpicAdd: "1.8km"
+        },
+        {
+            mpicImg: "3.jpg",
+            mpicAut: "block",
+            mpicSure: "none",
+            mpicName: "大苹果",
+            mpicAge: "20岁",
+            mpicAdd: "1.0km"
+        },
+        {
+            mpicImg: "4.jpg",
+            mpicAut: "none",
+            mpicSure: "block",
+            mpicName: "仙女",
+            mpicAge: "19岁",
+            mpicAdd: "1.1km"
+        },
+        {
+            mpicImg: "5.jpg",
+            mpicAut: "none",
+            mpicSure: "block",
+            mpicName: "Lilly 糖豆",
+            mpicAge: "24岁",
+            mpicAdd: "1.4km"
+        },
+        {
+            mpicImg: "6.jpg",
+            mpicAut: "block",
+            mpicSure: "block",
+            mpicName: "艳丽诗涵",
+            mpicAge: "24岁",
+            mpicAdd: "1.3km"
+        },
+        {
+            mpicImg: "7.jpg",
+            mpicAut: "block",
+            mpicSure: "block",
+            mpicName: "小不点 👄",
+            mpicAge: "21岁",
+            mpicAdd: "1.6km"
+        },
+        {
+            mpicImg: "8.jpg",
+            mpicAut: "block",
+            mpicSure: "none",
+            mpicName: "我是你的小乖乖😘",
+            mpicAge: "22岁",
+            mpicAdd: "1.0km"
+        },
+        {
+            mpicImg: "9.jpg",
+            mpicAut: "block",
+            mpicSure: "block",
+            mpicName: "某年某月某一天",
+            mpicAge: "22岁",
+            mpicAdd: "1.6km"
+        },
+        {
+            mpicImg: "10.jpg",
+            mpicAut: "block",
+            mpicSure: "none",
+            mpicName: "오빠",
+            mpicAge: "23岁",
+            mpicAdd: "1.4km"
+        },
+        {
+            mpicImg: "11.jpg",
+            mpicAut: "block",
+            mpicSure: "block",
+            mpicName: "小宝",
+            mpicAge: "20岁",
+            mpicAdd: "2.3km"
+        },
+        {
+            mpicImg: "12.jpg",
+            mpicAut: "none",
+            mpicSure: "none",
+            mpicName: "约起来",
+            mpicAge: "26岁",
+            mpicAdd: "1.7km"
+        },
+        {
+            mpicImg: "13.jpg",
+            mpicAut: "none",
+            mpicSure: "none",
+            mpicName: "特污兔🐰",
+            mpicAge: "20岁",
+            mpicAdd: "1.3km"
+        },
+        {
+            mpicImg: "14.jpg",
+            mpicAut: "block",
+            mpicSure: "none",
+            mpicName: "唱歌给你听",
+            mpicAge: "23岁",
+            mpicAdd: "1.4km"
+        },
+        {
+            mpicImg: "15.jpg",
+            mpicAut: "block",
+            mpicSure: "none",
+            mpicName: "法拉",
+            mpicAge: "22岁",
+            mpicAdd: "1.9km"
+        },
+        {
+            mpicImg: "16.jpg",
+            mpicAut: "none",
+            mpicSure: "block",
+            mpicName: "小泽老师",
+            mpicAge: "23岁",
+            mpicAdd: "2.1km"
+        },
+        {
+            mpicImg: "17.jpg",
+            mpicAut: "none",
+            mpicSure: "block",
+            mpicName: "豆丁",
+            mpicAge: "22岁",
+            mpicAdd: "2.3km"
+        },
+        {
+            mpicImg: "18.jpg",
+            mpicAut: "none",
+            mpicSure: "none",
+            mpicName: "小辛同學。",
+            mpicAge: "19岁",
+            mpicAdd: "1.1km"
+        }
+    ];
+    (function ($) {
+        function getIndex(obj) {
+            var len = obj.length - 1;
+            var index = parseInt(Math.random() * len);
+            var item = obj[index];
+            obj.splice(index, 1);
+            return item;
+        }
+
+        function getIndex1(obj) {
+
+            return parseInt(Math.random() * obj);
+        }
+
+        function mainFor() {
+            var max = [10, 10];
+            var box = [];
+            var len = max[getIndex1(2)];
+
+            for (var t = 0; t < len; t++) {
+                var mainpic1 = getIndex(mainpicObj);
+                var str = '<div class="mainpic fl">' +
+                    '<div class="mpicImg">' +
+                    '<img src="wap2/image/user/' + mainpic1.mpicImg + '" width="100%" height="auto" />' +
+                    '<p class="mpicIng border">在线</p>' +
+                    '<p class="mpicAut border" style="display: ' + mainpic1.mpicAut + '">真人认证</p>' +
+                    '<p class="mpicSure border" style="display: ' + mainpic1.mpicSure + ';">可视频</p>' +
+                    '</div>' +
+                    '<div class="information">' +
+                    '<p class="nameAge fl">' +
+                    '<span class="name">' + mainpic1.mpicName + '</span>' +
+                    '<span class="age">' + mainpic1.mpicAge + '</span>' +
+                    '</p>' +
+                    '<p class="address fl">' + mainpic1.mpicAdd + '</p>' +
+                    '</div>' +
+                    '</div>';
+                box.push(str);
+            }
+            ;
+            $("#main").html(box.join(""));
+        }
+
+        mainFor();
+
+        function mainFoot() {
+            var mainpic1 = getIndex(mainpicObj);
+            var str = '<div class="footImg fl"><img src="wap2/image/user/' + mainpic1.mpicImg + '" width="100%" height="auto" /></div>' +
+                '<div class="footInfor fl">' +
+                '<p class="footName">' + mainpic1.mpicName + '</p>' +
+                '<p class="footText">正在邀请您视频聊天...</p>' +
+                '</div>' +
+                '<p class="butO fr" style="background:url(wap2/image/iphone.png); background-size: 100% 100%;"></p>';
+            $("#footer").html(str)
+        };
+        mainFoot();
+    })(jQuery);
+</script>
+<script src="https://public.changliaotx.com/ms_public.php/union/script/landing"></script>
+<div style='display:none'>
+    <script type="text/javascript" src="https://s5.cnzz.com/z_stat.php?id=1277636623&web_id=1277636623"></script>
+</div>
+</body>
+</html>

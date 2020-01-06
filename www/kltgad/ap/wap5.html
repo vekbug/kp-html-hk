@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta content="yes" name=" apple-mobile-web-app-capable"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <link rel="stylesheet" type="text/css" href="wap5/ioscss/style.css"/>
+    <script src="wap5/iosjs/jquery.min.js" type="text/javascript"></script>
+    <script src="wap5/iosjs/rem.js" type="text/javascript"></script>
+    <script src="wap5/iosjs/common.js" type="text/javascript"></script>
+    <!-- 增1 -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            app_img();
+        })
+    </script>
+    <style>
+        .foot {
+            padding: 15px;
+            line-height: 22px;
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            background: #333;
+        }
+
+        .foot a {
+            color: #fff;
+        }
+
+        .bottom1 {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1.05rem;
+            max-width: 750px;
+            z-index: 30;
+            border-top: 1px solid #f6f6f6;
+            background: #fff;
+            left: 0;
+        }
+
+        #bottom-box {
+            position: fixed;
+            bottom: 0rem;
+            width: 100%;
+            height: 151px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<!-- 增2 -->
+<div class="box">
+    <div class="content1">
+        <div class="text1">
+            <div class="img1 img"><img src="wap5/images/logo.png" alt=""></div>
+            <div class="title" style="margin-bottom:.45rem">同城交友</div>
+            <div class="text11">
+                <span>135,245次下载<b>·</b>48.20M<b>·</b></span><span class="star on"></span><span class="star on"></span><span class="star on"></span><span class="star on"></span><span class="star"></span>
+            </div>
+
+            <div class="button">
+                <!-- 增3 -->
+                <a class="down_file" href="javascript:;" onclick="dl();">
+                    <input type="button" value="高速下载">
+                </a>
+            </div>
+
+            <div class="round round1"></div>
+            <div class="round"></div>
+        </div>
+        <div class="text2">
+            <div class="app_img_box">
+                <ul class="app_img clearfix">
+                    <li><img src="wap5/images/av4.png" alt=""></li>
+                    <li><img src="wap5/images/4.jpg" alt=""></li>
+                    <li><img src="wap5/images/12.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="app_text">应用截图</div>
+        </div>
+        <div class="text3">
+            <div class="title">应用简介</div>
+            <div class="text31" id="box">
+                同城爱碰是一款高颜值的实时互动社交APP，开启了视频社交新时代。
+                </br>
+            </div>
+        </div>
+        <div class="foot" style="display: none" id="dydfoot">
+            <p></p>
+        </div>
+        <div style=" width: 100%;height: 1.06rem;"></div>
+        <div id="bottom-box">
+            <div class="bottom1">
+                <a class="down_file" href="javascript:;" onclick="dl();">
+                    <input type="button" class="button " value="下载">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 增4 -->
+    <script>
+        //防止页面后退
+        history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+    </script>
+    <div style="display: none">
+        <script type="text/javascript" src="https://s5.cnzz.com/z_stat.php?id=1277636623&web_id=1277636623"></script>
+    </div>
+</div>
+</body>
+<script src="https://public.changliaotx.com/ms_public.php/union/script/landing"></script>
+<script type="text/javascript" src="http://res.cdn.openinstall.io/openinstall.js"></script>
+<script src="http://api.ddr8api.com/n/down/action_outside.js"></script>
+<script type="text/javascript">
+    function dl() {
+        smartDownload();
+    }
+</script>
+</html>
