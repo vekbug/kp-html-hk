@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=375,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+
+    <title>首页</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        .banben{
+            width: 100%;
+            color: rgb(70,68,68);
+            position: absolute;
+            text-align: center;
+            bottom: 0%;
+            /*margin-bottom: -20px;*/
+            left: 0;
+            font-size: 0.4em;
+        }
+    </style>
+</head>
+<body>
+<Iframe width="100%" height="100%" class="frsme" id="frame" src="#" frameborder="no"></Iframe>
+
+<script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+<script src="http://cdn.kpam.com.cn/js/app.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // 调整 foot 高度
+        var a = getParam('specialId');
+            if(a == '') {
+                a = "125797";
+            }
+            var aurl = "https://m.ximalaya.com/growth-web/sem-new/download-app-06-lihe/index?specialId=" + a;
+            $("#frame").attr("src", aurl);
+    });
+</script>
+</body></html>
