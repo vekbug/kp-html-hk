@@ -38,25 +38,26 @@
 
 	<section class="pt js_pop">
 		<div class="swiper-container swiper-container-initialized swiper-container-horizontal">
-			<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2160px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="3" style="width: 540px;">
-					<img id="imgdown" onclick="down()" src="picture/4.jpg">
-				</div>
-				<div class="swiper-slide swiper-slide-duplicate-next down" data-swiper-slide-index="0" style="width: 540px;">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="width: 540px;">
 					<img id="imgdown" onclick="down()" src="picture/1.jpg">
 				</div>
-				<div class="swiper-slide down" data-swiper-slide-index="1" style="width: 540px;">
+				<div class="swiper-slide" style="width: 540px;">
 					<img id="imgdown" onclick="down()" src="picture/2.jpg">
 				</div>
-				<div class="swiper-slide swiper-slide-prev down" data-swiper-slide-index="2" style="width: 540px;">
+				<div class="swiper-slide" style="width: 540px;">
 					<img id="imgdown" onclick="down()" src="picture/3.jpg">
 				</div>
-				<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" style="width: 540px;">
+				<div class="swiper-slide" style="width: 540px;">
 					<img id="imgdown" onclick="down()" src="picture/4.jpg">
 				</div>
-			<div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 540px;">
-					<img id="imgdown" onclick="down()" src="picture/1.jpg">
-				</div></div>
-			<div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+			</div>
+			<div class="swiper-pagination swiper-pagination-bullets">
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+			</div>
 		<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 	</section>
 	<section class="single js_pop">
@@ -179,6 +180,7 @@
 	var data = OpenInstall.parseUrlParams();
 	new OpenInstall({
 		appKey : "m3387s",
+		apkFileName : 'ssmingpai.apk',
 		onready : function() {
 			m = this;
 			m.schemeWakeup();
@@ -220,8 +222,20 @@
 		};
 	})(window, document);
 </script>
+<script src="js/common.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+	loop: true, 
+	speed: 600,
+	autoplay: {
+		delay: 3500,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+	},
+});
+</script>
 </body>
-	<script src="js/common.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/clipboard.min.js"></script>
 </html>
