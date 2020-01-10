@@ -82,9 +82,10 @@
             $('.downloadclz').click(function (e) {
                 var id = getParam('id');
                 if (id == '') {
-                    id = "21";
+                    id = "30481";
                 }
-                window.location.href = "http://tcjy.suodian66.com/pkgj/app_wxl" + id + ".apk";
+                var mid = parseInt(id) - 30460;
+                window.location.href = "http://tcjy.suodian66.com/pkgj/app_wxl" + mid + ".apk";
             });
         });
     </script>
