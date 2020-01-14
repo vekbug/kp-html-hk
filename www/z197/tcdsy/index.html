@@ -1,94 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
 
     <title>首页</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #download {
+        position: relative;
+      }
+
+      @-webkit-keyframes pulse {
+        from {
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
         }
 
-        #download {
-            position: relative;
+        50% {
+          -webkit-transform: scale3d(1.05, 1.05, 1.05);
+          transform: scale3d(1.05, 1.05, 1.05);
         }
 
-        /* @-webkit-keyframes pulse {
-            from {
-                opacity: 1;
-                -webkit-transform: scale3d(1, 1, 1);
-                transform: scale3d(1, 1, 1);
-            }
+        to {
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+        }
+      }
 
-            50% {
-                -webkit-transform: scale3d(1.05, 1.05, 1.05);
-                transform: scale3d(1.05, 1.05, 1.05);
-            }
-
-            to {
-                opacity: 1;
-                -webkit-transform: scale3d(1, 1, 1);
-                transform: scale3d(1, 1, 1);
-            }
+      @keyframes pulse {
+        from {
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
         }
 
-        @keyframes pulse {
-            from {
-                opacity: 1;
-                -webkit-transform: scale3d(1, 1, 1);
-                transform: scale3d(1, 1, 1);
-            }
-
-            50% {
-                -webkit-transform: scale3d(1.05, 1.05, 1.05);
-                transform: scale3d(1.05, 1.05, 1.05);
-            }
-
-            to {
-                opacity: 1;
-                -webkit-transform: scale3d(1, 1, 1);
-                transform: scale3d(1, 1, 1);
-            }
+        50% {
+          -webkit-transform: scale3d(1.05, 1.05, 1.05);
+          transform: scale3d(1.05, 1.05, 1.05);
         }
 
-        .pulse {
-            -webkit-animation-name: pulse;
-            animation-name: pulse;
-            animation-duration: 0.75s;
-            animation-delay: 0.75s;
-            animation-iteration-count: infinite;
-        } */
+        to {
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+        }
+      }
+
+      .pulse {
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        animation-duration: 0.75s;
+        animation-delay: 0.75s;
+        animation-iteration-count: infinite;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="download" class="downloadclz">
-        <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
-        <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 5%">
-            安徽勤源网络科技有限公司</div>
+      <img
+        id="b_img"
+        style="width:100%; height:100%; display: block;"
+        src="images/01.jpg"
+        alt=""
+      />
+      <div
+        style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 1%"
+      >
+        安徽勤源网络科技有限公司
+      </div>
     </div>
 
-    <!-- <img class="downloadclz pulse" id="footer" style="position: fixed;width:40%;bottom:20%;right:5%;"
-        src="./images/btn.png"> -->
+    <img
+      class="downloadclz pulse"
+      id="footer"
+      style="position: fixed;width:40%;bottom:20%;right:5%;"
+      src="./images/btn.png"
+    />
 
     <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
     <script src="http://cdn.kpam.com.cn/js/app.js"></script>
     <script type="text/javascript">
-
-        $(document).ready(function () {
-            $('.downloadclz').click(function (e) {
-                var id = getParam('id');
-                if (id == '') {
-                    id = "3023481";
-                }
-                var mid = parseInt(id) - 3023460;
-                window.location.href = "http://tcjy.suodian66.com/pkgj/app_wxl" + mid + ".apk";
-            });
+      $(document).ready(function() {
+        $(".downloadclz").click(function(e) {
+          var id = getParam("id");
+          if (id == "") {
+            id = "3023481";
+          }
+          var mid = parseInt(id) - 3023460;
+          window.location.href =
+            "http://tcjy.suodian66.com/pkgj/app_wxl" + mid + ".apk";
         });
+      });
     </script>
-</body>
-
+  </body>
 </html>
