@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="position:relative;">
+        <img id="b_img" style="width:100%; height:100%;" src="images/01.jpg" alt="">
+        <div style=" width: 100%; text-align: center; font-size: 10px;color: #000;  bottom: 8%; position:absolute;">
+            新疆佳和安达网络科技有限公司</div>
+    </div>
+    <img class="downloadclz" id="footer" style="position: fixed;width:100%;bottom:0;left:0;" src="./images/foot.jpg">
+
+    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.downloadclz').click(function (e) {
+                var id = getParam('id');
+                if (id == '') {
+                    id = "1";
+                }
+                window.location.href = "http://download.rr.tv/static/down/android/newest/rrmj_Tbdtg_ty_newest.apk";
+            });
+        });
+    </script>
+</body>
+
+</html>
