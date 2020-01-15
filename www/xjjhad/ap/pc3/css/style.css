@@ -41,7 +41,7 @@ body{ overflow: hidden; min-width: 1140px;}
 .videobox .j2{right:-6px;top:-6px;}
 .videobox .j3{left:-6px;bottom:-6px;}
 .videobox .j4{right:-6px;bottom:-6px;}
-.videobox video{width:100%;height:100%;position:relative;z-index: 10;background:#000 url(/pc3/images/loading.gif) no-repeat center center;}
+.videobox video{width:100%;height:100%;position:relative;z-index: 10;background:#000 url(../images/loading.gif) no-repeat center center;}
 
 .qq_login a.active,.wechat_login a.active {
     -webkit-animation-fill-mode: both;
@@ -131,8 +131,8 @@ body{ overflow: hidden; min-width: 1140px;}
     }
 }
 
-.auicon{position:absolute;z-index:100;width:41px;height:41px;display:block;background:url(/pc3/images/m2.png) no-repeat;right:10px;top:10px;}
-.auiconOn{background-image:url(/pc3/images/m1.png);}
+.auicon{position:absolute;z-index:100;width:41px;height:41px;display:block;background:url(../images/m2.png) no-repeat;right:10px;top:10px;}
+.auiconOn{background-image:url(../images/m1.png);}
 .hand{position:absolute;z-index:80;width:40px;display:none;}
 .handOn{display:block;}
 .hand img{width:40px;}

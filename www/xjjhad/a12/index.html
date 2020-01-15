@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>天气</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="./index_files/hm.js"></script>
+    <script type="text/javascript" src="./index_files/font.js"></script>
+    <link rel="stylesheet" href="./index_files/swiper.min.css">
+    <style type="text/css">
+        body,
+        div,
+        ul,
+        li,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        span,
+        a,
+        img,
+        form {
+            /*所以标签，外边距内边距为0*/
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+
+        ul {
+            /*ul中取消样式*/
+            list-style: none;
+        }
+
+        body,
+        html {
+            /*body中字体格式*/
+            font-family: "微软雅黑";
+            background: #fff;
+            height: 100%;
+            overflow: scroll;
+        }
+
+        img {
+            /*图片中去边框*/
+            border: none;
+            display: block;
+        }
+
+        a {
+            /*a标签中去下划线*/
+            text-decoration: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /*********cssR*********/
+        .header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .banner {
+            width: 100%;
+            z-index: 999;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .down_btn {
+            display: block;
+            position: absolute;
+            left: 5%;
+            bottom: 0;
+            text-align: center;
+            color: #fff;
+            width: 90%;
+            height: 45px;
+            line-height: 45px;
+            background-color: #f85959;
+            font-size: 20px;
+            border-radius: 22px;
+        }
+
+        .down_btn img {
+            width: 90%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <img src="./index_files/header.jpg" alt="">
+    </div>
+    <div class="banner">
+        <div class="swiper-container swiper-container-horizontal swiper-container-3d swiper-container-coverflow"
+            id="banner_inner">
+            <div class="swiper-wrapper" style="transform: translate3d(-503.289px, 0px, 0px); transition-duration: 0ms;">
+                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4"
+                    style="width: 197.368px; transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(150deg); z-index: -2; transition-duration: 0ms;">
+                    <img src="./index_files/banner-five.jpg" alt="">
+                    <div class="swiper-slide-shadow-left" style="opacity: 3; transition-duration: 0ms;"></div>
+                    <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="0"
+                    style="width: 197.368px; transform: translate3d(0px, 0px, -200.187px) rotateX(0deg) rotateY(100.093deg); z-index: -1; transition-duration: 0ms;">
+                    <img src="./index_files/banner-one.jpg" alt="">
+                    <div class="swiper-slide-shadow-left" style="opacity: 2.00187; transition-duration: 0ms;"></div>
+                    <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+                </div>
+                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1"
+                    style="width: 197.368px; transform: translate3d(0px, 0px, -99.8667px) rotateX(0deg) rotateY(49.9333deg); z-index: 0; transition-duration: 0ms;">
+                    <img src="./index_files/banner-two.jpg" alt="">
+                    <div class="swiper-slide-shadow-left" style="opacity: 0.998667; transition-duration: 0ms;"></div>
+                    <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+                </div>
+                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2"
+                    style="width: 197.368px; transform: translate3d(0px, 0px, -0.0533333px) rotateX(0deg) rotateY(0.0266667deg); z-index: 1; transition-duration: 0ms;">
+                    <img src="./index_files/banner-three.jpg" alt="">
+                    <div class="swiper-slide-shadow-left" style="opacity: 0.000533333; transition-duration: 0ms;"></div>
+                    <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div>
+                </div>
+                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="3"
+                    style="width: 197.368px; transform: translate3d(0px, 0px, -99.76px) rotateX(0deg) rotateY(-49.88deg); z-index: 0; transition-duration: 0ms;">
+                    <img src="./index_files/banner-four.jpg" alt="">
+                    <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+                    <div class="swiper-slide-shadow-right" style="opacity: 0.9976; transition-duration: 0ms;"></div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="4"
+                    style="width: 197.368px; transform: translate3d(0px, 0px, -200.08px) rotateX(0deg) rotateY(-100.04deg); z-index: -1; transition-duration: 0ms;">
+                    <img src="./index_files/banner-five.jpg" alt="">
+                    <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+                    <div class="swiper-slide-shadow-right" style="opacity: 2.0008; transition-duration: 0ms;"></div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                    style="width: 197.368px; transform: translate3d(0px, 0px, -299.893px) rotateX(0deg) rotateY(-149.947deg); z-index: -2; transition-duration: 0ms;">
+                    <img src="./index_files/banner-one.jpg" alt="">
+                    <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
+                    <div class="swiper-slide-shadow-right" style="opacity: 2.99893; transition-duration: 0ms;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <img src="./index_files/content-one.jpg" alt="">
+        <img src="./index_files/content-two.jpg" alt="">
+    </div>
+    <a href="http://qiniubigresource.nineton.cn/Weather_7021_release_BDsousuo-KP-1.apk" class="down_btn">
+        免费下载
+    </a>
+    <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 6%">
+        新疆佳和安达网络科技有限公司
+    </div>
+    <script type="text/javascript" src="./index_files/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./index_files/swiper.min.js"></script>
+
+
+    <script type="text/javascript">
+        //手机端显示的客户轮播
+        var bannerInner = new Swiper('#banner_inner', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 1.9,
+            autoplay: 2000,
+            loop: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true
+            }
+        });
+    </script>
+
+</body>
+
+</html>

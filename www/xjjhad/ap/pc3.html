@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <link rel="stylesheet" href="./pc3/css/style.css">
-    <script src="http://ap-release.oss-cn-shenzhen.aliyuncs.com/app/oss/tg/js/jquery.min.js"></script>
+    <script src="http://oss.059.com.cn/app/oss/tg/js/jquery.min.js"></script>
     <script type="text/javascript" src="pc3/js/home.js"></script>
     <script type="text/javascript" src="newpc/js/appon2.js"></script>
     <style id="tsbrowser_video_independent_player_style" type="text/css">
@@ -44,7 +44,7 @@
 
                 <h2>
                     <span class="h2_title">
-                        <img src="http://ap-release.oss-cn-shenzhen.aliyuncs.com/app/oss/sem/wap3/images/logo.png" style="width: 30px; vertical-align: middle"/> 扫一扫,
+                        <img src="http://oss.059.com.cn/app/oss/sem/wap3/images/logo.png" style="width: 30px; vertical-align: middle"/> 扫一扫,
                     </span>
                     <span>约会同城美女主播</span>
                 </h2>
@@ -125,6 +125,25 @@
         $(function(){
             $(".main a, .saoyisao").click(function(){
 
+                var readParameter = function (key) {
+                    var ret = '';
+                    if (window.location.search) {
+                        var s = window.location.search.substr(1);
+                        s = s.split('&');
+                        for (var i in s) {
+                            g = s[i].split('=');
+                            if (g[0] === key && g.length === 2) {
+                                ret = g[1];
+                                break;
+                            }
+                        }
+                    }
+                    if (ret === '' && key === '_cc') {
+                        ret = window.location.hash ? window.location.hash.substr(1) : '';
+                    }
+                    return ret;
+                };
+
                 layer.open({
                     type: 2,
                     title: !1,
@@ -133,7 +152,7 @@
                     area: ["700px", "520px"],
                     skin: "",
 
-                    content: ["alert.html" + window.location.hash, "no"],
+                    content: ["alert.html?_cc=" + readParameter('_cc'), "no"],
                     zIndex: 111111
                 });
 
@@ -145,7 +164,7 @@
     <div class="footer" style="bottom: 10px; position: absolute;">
         <div class="wrap">
             <div class="copyright">
-                &nbsp;版权所有: <span>长治市汇丰海信息科技有限公司</span>
+                &nbsp;版权所有: <span>新疆佳和安达网络科技有限公司</span>
             </div>
         </div>
     </div>

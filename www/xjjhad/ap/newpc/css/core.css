@@ -13,7 +13,7 @@
 	line-height: 33px;
 	border: solid 1px #e78f08;
 	height: 33px;
-	background: url(/newpc/images/ui-bg_gloss-wave_35_f6a828_500x100.png) left center;
+	background: url(../images/ui-bg_gloss-wave_35_f6a828_500x100.png) left center;
 }
 .blk h2, .qb_box h2 {
 	font: bold 14px "Microsoft YaHei";
@@ -29,13 +29,13 @@ a.closeBtn {
 	width: 19px;
 	height: 18px;
 	float: right;
-	background: url(/newpc/images/close.gif) no-repeat;
+	background: url(../images/close.gif) no-repeat;
 	text-indent: -99px;
 	overflow: hidden;
 	margin: 7px 10px 0 0;
 }
 a.closeBtn:hover {
-	background: url(/newpc/images/close_hover.gif)
+	background: url(../images/close_hover.gif)
 }
 .clear {
 	font-size: 0px;
@@ -122,7 +122,7 @@ a.closeBtn:hover {
 	line-height: 33px;
 	height: 33px;
 	width: 102px;
-	background: url(/newpc/images/button01.gif);
+	background: url(../images/button01.gif);
 	border: 0px;
 	outline: none;
 	font: bold 14px "Microsoft YaHei";
@@ -200,7 +200,7 @@ a.closeBtn:hover {
 	
 }
 .miyu_title input,.miyu_title a{ height:18px; float:left;color: #d81d7c}
-.big_btn{ width:120px; height:60px; line-height:60px; border:none; outline:none; background:url(/newpc/images/qb_but.gif); color:#fff; font-weight:bold;}
+.big_btn{ width:120px; height:60px; line-height:60px; border:none; outline:none; background:url(../images/qb_but.gif); color:#fff; font-weight:bold;}
 .miyu dl dt{ float:right; width:180px;}
 .miyu dl dd{ float:left; margin-bottom:15px; }
 .miyu dl dd span{ margin-left:10px; color:#F00}
@@ -214,7 +214,7 @@ a.closeBtn:hover {
 .blk .main dl.message dt{ color:#F0C; font-size:14px; font-weight:bold; width:200px; float:none; margin-bottom:20px;}
 .blk .main dl.message dd{ margin-bottom:10px; width:200px; color:#F3C}
 .blk .main dl.message dd span{ display:block; float:left; width:60px; margin-right:10px; text-align:right; color:#666}
-#loginbox .main  dl dt{ display:block; background:url(/newpc/images/login_ts.gif) left -10px no-repeat; line-height:40px; width:380px; padding-left:50px; font-size:16px; font-weight:bold; color:#F00; margin-bottom:20px;}
+#loginbox .main  dl dt{ display:block; background:url(../images/login_ts.gif) left -10px no-repeat; line-height:40px; width:380px; padding-left:50px; font-size:16px; font-weight:bold; color:#F00; margin-bottom:20px;}
 #loginbox .main  dl dd{ float:none; margin-bottom:10px; line-height:30px; padding-left:50px;}
 #loginbox .main  dl dd span{ margin-right:10px;}
 #loginbox .main  dl dd.dd01{ margin-bottom:0px; padding-left:80px;}
@@ -226,9 +226,9 @@ a.closeBtn:hover {
 .contectlist{ padding-top:20px;}
 .contectlist li{ display:block; float:left; width:160px; height:52px; padding-left:60px; line-height:52px; font-size:14px; margin-bottom:10px; font-size:14px; font-weight:bold;}
 .contectlist{ padding-left:30px;}
-.contectlist li.qq{ background:url(/newpc/images/con_01.gif) no-repeat}
-.contectlist li.weixin{ background:url(/newpc/images/con_04.gif) no-repeat}
-.contectlist li.email{ background:url(/newpc/images/con_02.gif) no-repeat}
-.contectlist li.mobile{ background:url(/newpc/images/con_03.gif) no-repeat}
+.contectlist li.qq{ background:url(../images/con_01.gif) no-repeat}
+.contectlist li.weixin{ background:url(../images/con_04.gif) no-repeat}
+.contectlist li.email{ background:url(../images/con_02.gif) no-repeat}
+.contectlist li.mobile{ background:url(../images/con_03.gif) no-repeat}
 
 

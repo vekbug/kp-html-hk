@@ -44,7 +44,7 @@ function random(Min,Max){
 
 // 美女图
 function GirlsImages () {
-    var BaseUrl = 'http://ap-release.oss-cn-shenzhen.aliyuncs.com/';
+    var BaseUrl = 'http://oss.059.com.cn/';
     var BaseDir = 'app/oss/sem/pc3/source/images/';
     var girls = [];
     for (var i = 1; i < 32; i++) {
@@ -56,7 +56,7 @@ function GirlsImages () {
 // 获取一个美女视频
 function GirlsVideo (videoIndex = '') {
     // 视频Domain
-    var BaseUrl = 'http://ap-release.oss-cn-shenzhen.aliyuncs.com/';
+    var BaseUrl = 'http://oss.059.com.cn/';
     // 视频目录
     var BaseDir = 'app/oss/sem/pc3/source/video/';
     // 视频名
@@ -88,7 +88,7 @@ function randomsort(a, b) {
 function WrapImages() {
     var data = GirlsImages();
     var text = Text();
-    //data.sort(randomsort);
+    data.sort(randomsort);
     data = data.slice(0,30);
     for(var i=0; i < data.length; i++){
         $('.wrap-section').append(Dom(data[i], text[i]));

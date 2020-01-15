@@ -33,7 +33,7 @@ $(function(){
 	
 })
 $(document).ready(function(e) {
-    getMsg();
+    // getMsg();
 });
 
 function getMsg(){

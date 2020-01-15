@@ -50,11 +50,11 @@ body{}
 .info{ line-height:28px;}
 .info p{ text-align:center; font-size:14px;}
 .info span{ color: #FF9900;font-weight: bold}
-.info span.online{ float:right; color:#009900; display:block; padding-left:18px; background:url(/newpc/images/online.png) no-repeat left center}
+.info span.online{ float:right; color:#009900; display:block; padding-left:18px; background:url(../images/online.png) no-repeat left center}
 .more{ text-align:center; padding-bottom:20px; font-size:14px; background:#fff; margin-bottom:15px;}
 .cando{ padding:20px 10px 20px 25px; background:#fff; margin-bottom:15px; border-radius:3px; height:256px;}
 .cando li{ display:block; float:left; width:183px; margin-right:10px; position:relative;}
-.cando li span{display:block; position:absolute; left:0px; top:206px; line-height:50px; height:50px; width:100%; text-align:center; font-size:20px; color:#fff; background: url(/newpc/images/transparent.png); font-weight:bold;}
+.cando li span{display:block; position:absolute; left:0px; top:206px; line-height:50px; height:50px; width:100%; text-align:center; font-size:20px; color:#fff; background: url(../images/transparent.png); font-weight:bold;}
 .cando li span.cur{background:#c5d52b}
 .cando li p{ line-height:23px; font-size:14px; color:#acacac;}
 .jiaru{ line-height:70px; text-align:center; font-size:40px; color:#fff; background:#FF9900; border-bottom:solid 3px #FF9900;}
@@ -70,19 +70,19 @@ body{}
 .topright span#num{ color:#F00}
 .topright strong{ margin-left:10px; color: #F00;}
 .topright a i{ font-family:"宋体"}
-.topright a.login,.topright a.reg{ display:block; float:right; line-height:30px; padding-left:20px; margin-left:20px; color:#666; background:url(/newpc/images/show_header_reg.gif) left center no-repeat}
-.topright a.login{background:url(/newpc/images/show_header_login.gif) left center no-repeat}
+.topright a.login,.topright a.reg{ display:block; float:right; line-height:30px; padding-left:20px; margin-left:20px; color:#666; background:url(../images/show_header_reg.gif) left center no-repeat}
+.topright a.login{background:url(../images/show_header_login.gif) left center no-repeat}
 .topright a:hover{ text-decoration:underline; color:#F6C}
 .topright li{ float:right; margin-left:10px; line-height:24px; display:block; position:relative; font-size:12px; color:#555;}
 
 
-.nav{ display:block; height:40px; line-height:40px; background:url(/newpc/images/bar.gif); padding-left:25px; margin-bottom:15px; clear:both;}
+.nav{ display:block; height:40px; line-height:40px; background:url(../images/bar.gif); padding-left:25px; margin-bottom:15px; clear:both;}
 .login .top{ height:75px;}
 .login .top .nav{ display:none;}
 .nav li{ display:block; position:relative; float:left; font-size:14px; font-weight:bold}
-.nav li a{ display:block; width:105px; text-align:center; color:#fff; background:url(/newpc/images/bar_in.gif) right center no-repeat}
+.nav li a{ display:block; width:105px; text-align:center; color:#fff; background:url(../images/bar_in.gif) right center no-repeat}
 .nav li.last a{ background-image:none;}
-.nav li a.cur{ background:url(/newpc/images/bar_sel.png) center bottom no-repeat; color:#cb3301}
+.nav li a.cur{ background:url(../images/bar_sel.png) center bottom no-repeat; color:#cb3301}
 .nav li a:hover{ color:#FF0}
 .nav li a.cur:hover{ color:#cb3301}
 .nav li span.hot,.nav li span.mobile{
@@ -94,10 +94,10 @@ body{}
 }
 .nav li span.mobile{ left:15px; top:11px;}
 .left{ width:735px; border:solid 1px #e3e3e3;}
-.leftheader{ line-height:38px; background:url(/newpc/images/bot_bg_n01.jpg) repeat-x; line-height:38px; height:38px;}
+.leftheader{ line-height:38px; background:url(../images/bot_bg_n01.jpg) repeat-x; line-height:38px; height:38px;}
 .leftheader a{ display:block; float:left; padding:0 20px; color:#000; border-right:solid 1px #e3e3e3}
 .leftheader span{ margin-left:20px; color:#f00}
-.leftheader a.cur{ background:url(/newpc/images/bt.png) repeat-x; font-weight:bold;}
+.leftheader a.cur{ background:url(../images/bt.png) repeat-x; font-weight:bold;}
 .content{ padding:25px; padding-right:0px;}
 .content dl{ float:left; width:320px; border-bottom:dashed 1px #ccc; padding:15px 10px; height:150px; overflow:hidden;}
 .content dl dt{ float:left; margin-right:15px; }
@@ -108,7 +108,7 @@ body{}
 .content dl dd.name a,.content ul li a.name{ color:#dc0088; text-decoration:underline;}
 .content dl dd.name a img{ margin-right:10px;}
 .content dl dd.deatail{ padding-left:135px; margin-top:15px;}
-.content dl dd.deatail a,.content ul li a.deatail{ display:block; line-height:22px; padding-left:20px;  border:solid 1px #d5d5d5; width:85px; background:url(/newpc/images/sh_more.gif) 10px center no-repeat #fffeee; color:#804000}
+.content dl dd.deatail a,.content ul li a.deatail{ display:block; line-height:22px; padding-left:20px;  border:solid 1px #d5d5d5; width:85px; background:url(../images/sh_more.gif) 10px center no-repeat #fffeee; color:#804000}
 .content ul li{ float:left; width:160px; margin-bottom:20px; margin-right:15px; height:220px;}
 .content ul li a{ display:block;}
 .content ul li a.sphoto{ width:160px; height:135px; overflow:hidden; margin-bottom:15px; background-position:top center; background-repeat:no-repeat;}
@@ -117,13 +117,13 @@ body{}
 .content ul li a.name img{ margin-right:5px;}
 .right{ width:250px;}
 .content ul li a.deatail{ margin-left:25px;}
-.searbox{background:url(/newpc/images/sh_bg03.gif) repeat-x; border:solid 1px #f5bce0; margin-bottom:15px;}
-.searbox h3,.searbox h4{ display:block; line-height:38px; background:url(/newpc/images/sh_tt02.png) no-repeat 10px center; padding-left:50px; font-size:15px;}
-.searbox h4{ background:url(/newpc/images/visitor.png) no-repeat left center; margin-bottom:10px;}
+.searbox{background:url(../images/sh_bg03.gif) repeat-x; border:solid 1px #f5bce0; margin-bottom:15px;}
+.searbox h3,.searbox h4{ display:block; line-height:38px; background:url(../images/sh_tt02.png) no-repeat 10px center; padding-left:50px; font-size:15px;}
+.searbox h4{ background:url(../images/visitor.png) no-repeat left center; margin-bottom:10px;}
 .searbox h2{ margin:10px 0; padding:0 10px; line-height:20px;}
 .searbox form{
 	margin: 0 10px;
-	background: url(/newpc/images/serlin.gif) left top  repeat-x;
+	background: url(../images/serlin.gif) left top  repeat-x;
 	display: block;
 	padding: 20px 0 10px 0;
 }
@@ -148,7 +148,7 @@ body{}
 .dl1 dl dd.dd04 input,.dl1 dl dd.dd05 input{ height:36px; outline:none; border:0px; background:#ff5178; padding:0px 35px; color:#FFF; font-weight:bold; cursor: pointer; font-size:16px;}
 .dl1 dl dd.dd04 input:hover{ background:#e05474;}
 .dl1 dl dd.dd04,.dl1 dl dd.dd05{ margin-bottom:15px; float:left;}
-.dl1 dl dd.dd05 input{ background:url(/newpc/images/bot_bg_n01.jpg) ; border:solid 1px #d3d3d3; border-radius:2px; color:#666; padding:0 40px;}
+.dl1 dl dd.dd05 input{ background:url(../images/bot_bg_n01.jpg) ; border:solid 1px #d3d3d3; border-radius:2px; color:#666; padding:0 40px;}
 .dl1 dl dd.dd06{ display:block; margin-left:0px; width:100%; background:#f4f4f4; height:47px; line-height:47px; text-align:center; color:#666;}
 .dl1 dl dd.dd06 a{ color:#F90; font-weight:bold; text-decoration:underline;}
 .dl1 dl dd.dd06 a:hover{color:#ff5178}
@@ -156,30 +156,30 @@ body{}
 .buttomMenu2{ text-align:center; color:#666px; font-size:12px; line-height:24px; margin-top:20px}
 .buttomMenu2 a{ color:#666;}.buttomMenu2 a:hover{ color:#F39}
 .buttomMenu2 span{ color: #CCC; margin:0 10px;}
-.pay_help{ width:811px; margin-top:20px; background:url(/newpc/images/pay2_help_bg.gif) repeat-x 1px 1px; border:1px solid #DCDCDC}
-.reg_bar{ line-height:40px; background: url(/newpc/images/reg_bar.gif); height:40px;}
+.pay_help{ width:811px; margin-top:20px; background:url(../images/pay2_help_bg.gif) repeat-x 1px 1px; border:1px solid #DCDCDC}
+.reg_bar{ line-height:40px; background: url(../images/reg_bar.gif); height:40px;}
 .reg_read{ height:486px; background:#fff; border:solid 1px #ccc;}
-.reg_read h1{ display:block; margin:28px 0 10px 100px; background:url(/newpc/images/reg_top.gif) no-repeat; width: 300px; height:20px;}
-.reg_read dl{ margin:0 90px 30px 90px; background:url(/newpc/images/reg_read_bg2.gif) repeat-x; height:240px; border:solid 1px #ddddae; border-top:none; border-radius:2px; padding:30px;}
+.reg_read h1{ display:block; margin:28px 0 10px 100px; background:url(../images/reg_top.gif) no-repeat; width: 300px; height:20px;}
+.reg_read dl{ margin:0 90px 30px 90px; background:url(../images/reg_read_bg2.gif) repeat-x; height:240px; border:solid 1px #ddddae; border-top:none; border-radius:2px; padding:30px;}
 .reg_read dl dt{ font-size:14px; font-weight:bold; color:#333; line-height:40px; }
 .reg_read dl dd{ line-height:22px; margin-bottom:10px; font-size:14px;}
 .reg_read dl dd span{ color:#F00}
 .reg_read dl dd.reg_read_d2{ text-align:right; padding-right:30px; font-size:12px; color:#777; margin-bottom:30px;}
 .reg_read dl dd.reg_read_d3{ text-align:center;}
-.reg_read dl dd.reg_read_d3 input{ border:none; outline:none; background:url(/newpc/images/reg_start.gif); width:218px; height:48px; cursor:pointer;}
+.reg_read dl dd.reg_read_d3 input{ border:none; outline:none; background:url(../images/reg_start.gif); width:218px; height:48px; cursor:pointer;}
 .reg_read_bot,.reg_form_bot{ line-height:3px; height:3px; font-size:0px; background:#e6d4d4; width:780px; margin:0 auto;}
 .reg_foot{ text-align:center; font-size:12px; margin-top:20px; color:#CCC}
 .reg_foot a{ color:#999;}
 .reg_foot span{ margin:0 10px;}
-.reg_form{ background:#fff; height:720px; border-bottom-right-radius:5px; border-bottom-left-radius:5px; background:url(/newpc/images/reg2_bg01.gif) right 50px no-repeat #fff}
+.reg_form{ background:#fff; height:720px; border-bottom-right-radius:5px; border-bottom-left-radius:5px; background:url(../images/reg2_bg01.gif) right 50px no-repeat #fff}
 .reg2.alertreg .reg_form{ background:#fff; height:auto;}
-.reg2 .reg_form h1,.reg3 .reg_form h1{ background: url(/newpc/images/reg2_index_tt.gif) no-repeat left 28px ; padding-left:40px; line-height:44px; font-size:14px; height:44px; font-weight:normal; color:#666; margin:0 0 20px 100px; padding-top:28px;}
+.reg2 .reg_form h1,.reg3 .reg_form h1{ background: url(../images/reg2_index_tt.gif) no-repeat left 28px ; padding-left:40px; line-height:44px; font-size:14px; height:44px; font-weight:normal; color:#666; margin:0 0 20px 100px; padding-top:28px;}
 .reg_form .ad{ padding-top:36px; margin-left:30px; font-size:22px; font-weight:bold; color:#C03}
 .reg2.alertreg .reg_form h1,.reg3.alertreg .reg_form h1{ margin-left:30px; margin-top:20px; padding-top:0; background-position:left 0}
-.reg3 .reg_form{background:url(/newpc/images/rg3_2.gif) 480px 200px no-repeat #fff;}
+.reg3 .reg_form{background:url(../images/rg3_2.gif) 480px 200px no-repeat #fff;}
 .reg_form h1 a{ color:#F60}
 .reg_form h1 span,.reg_form h1 a{ display:block; float:left;}
-.reg_form h1 span{padding-right:10px; margin-right:20px; color:#C00; font-size:16px; font-weight:bold; line-height:35px; background:url(/images/reg2_index_ttright.gif) right top no-repeat;}
+.reg_form h1 span{padding-right:10px; margin-right:20px; color:#C00; font-size:16px; font-weight:bold; line-height:35px; background:url(../images/reg2_index_ttright.gif) right top no-repeat;}
 
 .reg_form_bot{ background:#000; width:890px; height:5px; line-height:0px; font-size:0px; display:block;}
 .ny .reg2 .reg_form{ background:#fff; margin-top:30px;}
@@ -194,9 +194,9 @@ body{}
 .reg2 .reg_form dl dd span.s02_1 label{ margin-right:10px;}
 .reg2 .reg_form dl dd span.s01 u{ text-decoration:none; color:#F00; font-size:16px; font-family:"宋体"; margin-right:5px;}
 .reg2 .reg_form dl dd span.s02{ width:230px;}
-.reg2 .reg_form .reg2_but1,.reg2 .reg_form .reg2_but2{ background: url(/newpc/images/reg2_1.gif) no-repeat; border:none; outline:none; width:146px; height:36px;}
-.reg2 .reg_form .reg2_but2{ background:url(/newpc/images/reg3_3.gif)}
+.reg2 .reg_form .reg2_but1,.reg2 .reg_form .reg2_but2{ background: url(../images/reg2_1.gif) no-repeat; border:none; outline:none; width:146px; height:36px;}
+.reg2 .reg_form .reg2_but2{ background:url(../images/reg3_3.gif)}
 .reg2 .reg_form dl dd span.s04 a{ color:#369; text-decoration:underline}
-.reg3 .reg_form h1{ background:url(/newpc/images/reg3_1.gif) no-repeat left 28px}
+.reg3 .reg_form h1{ background:url(../images/reg3_1.gif) no-repeat left 28px}
 .reg3 .reg_form{ height:auto;}
 .newsContent{ padding:20px;; line-height:24px;}

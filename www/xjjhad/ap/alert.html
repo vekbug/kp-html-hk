@@ -24,9 +24,28 @@
             <div class="memberbox2">
                 <img src="erweima.png" name="codeImg_1" width="280" id="codeImg_1" style="margin-left: 9px;" /><br>
                 <script>
+                    var readParameter = function (key) {
+                        var ret = '';
+                        if (window.location.search) {
+                            var s = window.location.search.substr(1);
+                            s = s.split('&');
+                            for (var i in s) {
+                                g = s[i].split('=');
+                                if (g[0] === key && g.length === 2) {
+                                    ret = g[1];
+                                    break;
+                                }
+                            }
+                        }
+                        if (ret === '' && key === '_cc') {
+                            ret = window.location.hash ? window.location.hash.substr(1) : '';
+                        }
+                        return ret;
+                    };
+
                     function ap_get_qrcode(id) {
                         var a = 'https://public.chaobang.com/union/qrcode/sem_qrcode?qs=SEMPC&tc=';
-                        var b = window.location.hash.substr(1);
+                        var b = readParameter('_cc');
                         b = encodeURIComponent(b);
                         document.getElementById(id).setAttribute('src', a + b);
                     }
